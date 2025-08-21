@@ -1,0 +1,68 @@
+# 构建输出
+dist/
+build/
+*.zip
+*.pdf
+*.epub
+
+# 临时文件
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 缓存文件
+.cache/
+*.cache
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 报告文件（可选择性提交）
+*-report.md
+format-report.md
+style-validation-report.md
+cross-reference-report.md
+chart-quality-report.md
+device-compatibility-report.md
+publication-report.json
+distribution-report.json
+
+# 备份文件
+*.bak
+*.backup
