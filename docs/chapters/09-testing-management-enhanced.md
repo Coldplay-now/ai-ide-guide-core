@@ -9,8 +9,7 @@
 
 #### 9.1.1.1 步骤1：测试需求分析
 
-```
-
+```java
 提示词模板：
 "基于以下项目信息，制定测试计划：
 项目名称：[项目名称]
@@ -32,7 +31,7 @@
 
 #### 9.1.1.2 步骤2：测试用例设计
 
-```
+```java
 
 提示词模板：
 "为以下功能设计测试用例：
@@ -48,13 +47,13 @@
 8. 异常流程测试用例
 9. 性能测试用例
 10. 安全测试用例"
-
 ```
 
 #### 9.1.1.3 步骤3：测试数据准备
 
-```
+```java
 
+提示词模板：
 提示词模板：
 "为测试用例准备测试数据：
 测试场景：[测试场景描述]
@@ -69,8 +68,6 @@
 14. 性能测试数据集
 15. 数据准备脚本"
 
-```
-
 ### 9.1.2 实践案例：电商订单系统测试计划
 
 
@@ -80,13 +77,16 @@
 
 **第一步：测试需求分析**
 
-```
+```java
 
+输入提示词：
+"基于以下电商订单系统信息，制定测试计划：
 输入提示词：
 "基于以下电商订单系统信息，制定测试计划：
 项目名称：电商订单管理系统
 功能模块：订单创建、订单查询、订单修改、订单取消、支付处理、库存管理
 用户故事：
+
 - 作为买家，我希望能够创建订单并完成支付
 - 作为买家，我希望能够查询和管理我的订单
 - 作为商家，我希望能够处理订单和管理库存
@@ -98,8 +98,7 @@
 
 AI输出：
 
-```markdown
-# 第9章 电商订单管理系统测试计划
+## 第9章 电商订单管理系统测试计划
 
 
 ## 9.2 1. 测试概述
@@ -132,17 +131,18 @@ AI输出：
 
 
 <div class="chart-container">
+
 ```mermaid
+pyramid
+    title 测试金字塔
+    
+    "E2E测试 (10%)" : 5
 pyramid
     title 测试金字塔
     
     "E2E测试 (10%)" : 5
     "集成测试 (20%)" : 15  
     "单元测试 (70%)" : 35
-
-```
-</div>
-
 
 ### 9.3.2 2.2 测试类型
 
@@ -177,10 +177,10 @@ pyramid
 | ------ | ------ | ------ | -------- |
 | 第1周 | 测试用例设计 | 5天 | 测试用例文档 |
 | 第2周 | 测试环境搭建 | 3天 | 测试环境 |
-|  | 测试数据准备 | 2天 | 测试数据集 |
+| - | 测试数据准备 | 2天 | 测试数据集 |
 | 第3周 | 功能测试执行 | 5天 | 测试报告 |
 | 第4周 | 性能测试执行 | 3天 | 性能测试报告 |
-|  | 缺陷修复验证 | 2天 | 缺陷报告 |
+| - | 缺陷修复验证 | 2天 | 缺陷报告 |
 
 ## 9.6 5. 风险评估
 
@@ -199,14 +199,13 @@ pyramid
 - 一般缺陷数量 ≤ 5
 - 测试覆盖率 ≥ 80%
 
-```
+```java
 
 **第二步：详细测试用例设计**
 
 ```
 
-输入提示词：
-"为订单创建功能设计详细测试用例：
+**第二步：详细测试用例设计**
 功能描述：用户可以选择商品，填写收货信息，创建订单
 验收标准：
 16. 用户选择商品后可以进入订单确认页面
@@ -223,23 +222,34 @@ pyramid
 AI输出：
 
 ```markdown
-# 第9章 订单创建功能测试用例
+
+## 第9章 订单创建功能测试用例
 
 
 ## 9.8 TC001: 正常订单创建流程
 
 **测试目标：** 验证用户能够成功创建订单
+
+## 第9章 订单创建功能测试用例 2
+
+
+## 9.8 TC001: 正常订单创建流程 2
+
+
+**测试目标：** 验证用户能够成功创建订单
 **前置条件：** 
 - 用户已登录
 - 商品库存充足
+
 - 用户有有效收货地址
 
 **测试步骤：**
-20. 用户选择商品并添加到购物车
-21. 点击"去结算"按钮
-22. 选择收货地址
-23. 选择支付方式
-24. 点击"提交订单"按钮
+1. 用户选择商品并添加到购物车
+2. 点击"去结算"按钮
+3. 选择收货地址
+4. 选择支付方式
+
+5. 点击"提交订单"按钮
 
 **预期结果：**
 - 系统显示订单确认页面
@@ -249,12 +259,6 @@ AI输出：
 - 用户收到订单创建通知
 
 **测试数据：**
-
-```json
-{
-  "userId": 12345,
-  "items": [
-    {
       "productId": 67890,
       "quantity": 2,
       "price": 99.99
@@ -268,8 +272,14 @@ AI输出：
   "paymentMethod": "ALIPAY"
 }
 
-```
+```markdown
 
+## 9.9 TC002: 库存不足场景
+
+**测试目标：** 验证库存不足时的处理逻辑
+**前置条件：** 
+- 用户已登录
+- 商品库存不足
 ## 9.9 TC002: 库存不足场景
 
 **测试目标：** 验证库存不足时的处理逻辑
@@ -324,19 +334,13 @@ AI输出：
 - 订单创建失败
 
 **测试数据：**
-
-```json
-{
-  "shippingAddress": {
-    "name": "",  // 空姓名
-    "phone": "invalid_phone",  // 无效电话
-    "address": ""  // 空地址
   }
 }
 
-```
+```markdown
 
 ## 9.12 TC005: 性能测试 - 并发订单创建
+
 
 **测试目标：** 验证系统并发处理订单的能力
 **测试条件：** 
@@ -344,9 +348,20 @@ AI输出：
 - 每个用户创建1个订单
 
 **测试步骤：**
-33. 启动1000个并发线程
-34. 每个线程模拟用户创建订单
-35. 记录响应时间和成功率
+
+## 9.12 TC005: 性能测试 - 并发订单创建 2
+
+**测试目标：** 验证系统并发处理订单的能力
+**测试条件：** 
+
+- 1000个并发用户
+- 每个用户创建1个订单
+
+**测试步骤：**
+1. 启动1000个并发线程
+
+2. 每个线程模拟用户创建订单
+3. 记录响应时间和成功率
 
 **预期结果：**
 - 平均响应时间 < 2秒
@@ -354,16 +369,18 @@ AI输出：
 - 系统无崩溃或异常
 - 数据一致性正确
 
-```### 
-9.1.3 测试计划模板
-
-**测试计划文档模板：**
-
-```markdown
-# 第9章 [项目名称] 测试计划
-
-
 ## 9.13 文档信息
+
+- **文档版本：** v1.0
+- **创建日期：** [日期]
+- **最后更新：** [日期]
+- **测试负责人：** [姓名]
+- **项目经理：** [姓名]
+
+## 第9章 [项目名称] 测试计划
+
+
+## 9.13 文档信息 2
 
 - **文档版本：** v1.0
 - **创建日期：** [日期]
@@ -383,10 +400,12 @@ AI输出：
 - [测试目标2]
 - [测试目标3]
 
+
 ### 9.14.3 1.3 测试范围
 
 **包含范围：**
 - [功能模块1]
+
 - [功能模块2]
 - [非功能需求]
 
@@ -525,18 +544,17 @@ AI输出：
 | 测试经理 | [姓名] | [签名] | [日期] |
 | 项目经理 | [姓名] | [签名] | [日期] |
 | 质量经理 | [姓名] | [签名] | [日期] |
+```java
 
-```
-
-## 9.2 自动化测试
-
-
-### 9.2.1 AI辅助自动化测试脚本生成
-
-
-#### 9.24.1.1 步骤1：测试脚本框架生成
-
-```
+提示词模板：
+"为以下API接口生成自动化测试脚本：
+接口信息：
+- 接口名称：[接口名称]
+- 请求方法：[GET/POST/PUT/DELETE]
+- 请求路径：[API路径]
+- 请求参数：[参数列表]
+- 响应格式：[响应结构]
+- 业务逻辑：[业务逻辑描述]
 
 提示词模板：
 "为以下API接口生成自动化测试脚本：
@@ -557,13 +575,13 @@ AI输出：
 38. 正常流程测试方法
 39. 异常流程测试方法
 40. 断言验证逻辑"
+- 页面URL：[页面地址]
+- 主要元素：[元素列表]
+- 用户操作：[操作流程]
+- 验证点：[验证内容]
 
-```
-
-#### 9.24.1.2 步骤2：UI自动化测试生成
-
-```
-
+测试框架：Selenium WebDriver
+编程语言：[Java/Python]
 提示词模板：
 "为以下Web页面生成UI自动化测试脚本：
 页面信息：
@@ -582,20 +600,22 @@ AI输出：
 43. 元素定位方法
 44. 用户操作方法
 45. 结果验证方法"
-
-```
-
-### 9.2.2 实践案例：用户登录自动化测试
+```java
 
 
-**业务场景：** 为用户登录功能生成完整的自动化测试脚本。
+输入提示词：
+"为用户登录API生成自动化测试脚本：
+接口信息：
+- 接口名称：用户登录
+- 请求方法：POST
+- 请求路径：/api/v1/auth/login
+- 请求参数：username(string), password(string)
+- 响应格式：{code: int, message: string, data: {token: string, user: object}}
+- 业务逻辑：验证用户名密码，成功返回JWT token
 
-**AI辅助自动化测试生成过程：**
+测试框架：TestNG
 
-**第一步：API自动化测试生成**
-
-```
-
+编程语言：Java
 输入提示词：
 "为用户登录API生成自动化测试脚本：
 接口信息：
@@ -612,19 +632,6 @@ AI输出：
 请生成完整的测试脚本"
 
 AI输出：
-
-```java
-package com.example.test.api;
-
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import java.util.HashMap;
 import java.util.Map;
 
 public class UserLoginApiTest {
@@ -833,11 +840,12 @@ public class UserLoginApiTest {
     }
 }
 
-```
+```java
 
 **第二步：UI自动化测试生成**
 
 ```
+
 
 输入提示词：
 "为用户登录页面生成UI自动化测试脚本：
@@ -849,11 +857,26 @@ public class UserLoginApiTest {
 - 验证点：登录成功跳转到首页，登录失败显示错误信息
 
 测试框架：Selenium WebDriver
-编程语言：Java"
-
+**第二步：UI自动化测试生成**
 AI输出：
 
 ```java
+package com.example.test.ui;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
+
+// 页面对象模型 - 登录页面
+public class LoginPage {
+    private WebDriver driver;
+    private WebDriverWait wait;
+    
+    @FindBy(id = "username")
 package com.example.test.ui;
 
 import org.openqa.selenium.WebDriver;
@@ -1155,15 +1178,15 @@ public class LoginUITest {
             "在桌面端登录应该成功");
     }
 }
-
-```##
-
-# 第9章 9.2.3 自动化测试框架配置
-
-
-**测试框架配置文件：**
-
-```xml
+        <rest-assured.version>5.3.0</rest-assured.version>
+        <allure.version>2.20.1</allure.version>
+    </properties>
+    
+    <dependencies>
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
 <!-- pom.xml - Maven配置 -->
 <project>
     <properties>
@@ -1259,12 +1282,12 @@ public class LoginUITest {
         </plugins>
     </build>
 </project>
-
-```
-
-**TestNG配置文件：**
-
-```xml
+            <class name="com.example.test.api.OrderApiTest"/>
+            <class name="com.example.test.api.ProductApiTest"/>
+        </classes>
+    </test>
+    
+    <!-- UI测试 -->
 <!-- src/test/resources/testng.xml -->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="AutomationTestSuite" parallel="methods" thread-count="5">
@@ -1310,12 +1333,12 @@ public class LoginUITest {
     </test>
     
 </suite>
-
-```
-
-**测试配置管理：**
-
-```java
+    
+    private TestConfig() {
+        loadProperties();
+    }
+    
+    public static TestConfig getInstance() {
 // 测试配置管理类
 package com.example.test.config;
 
@@ -1418,12 +1441,12 @@ public class TestConfig {
         return getProperty("db.password", "");
     }
 }
+browser=chrome
+headless=true
+window.width=1920
+window.height=1080
 
-```
-
-**测试属性配置文件：**
-
-```properties
+# 第9章 数据库配置
 # 第9章 src/test/resources/test.properties
 
 # 第9章 基础配置
@@ -1460,23 +1483,25 @@ retry.count=2
 
 log.level=INFO
 log.file=target/test.log
-
-```
-
 ```properties
-# 第9章 src/test/resources/test-dev.properties
 
-# 第9章 开发环境配置
+## 第9章 src/test/resources/test-staging.properties
+
+## 第9章 预生产环境配置
+
+## 第9章 src/test/resources/test-dev.properties
+
+## 第9章 开发环境配置
 
 base.url=http://dev-api.example.com
 web.base.url=http://dev.example.com
 db.url=jdbc:mysql://dev-db.example.com:3306/testdb
 db.username=testuser
 db.password=testpass
-
 ```
 
-```properties
+## 9.3 测试执行与缺陷跟踪
+
 # 第9章 src/test/resources/test-staging.properties
 
 # 第9章 预生产环境配置
@@ -1488,22 +1513,6 @@ db.username=testuser
 db.password=testpass
 headless=true
 thread.count=10
-
-```
-
-## 9.3 测试执行与缺陷跟踪
-
-
-### 9.3.1 AI辅助缺陷分析操作步骤
-
-
-#### 9.25.1.1 步骤1：缺陷自动分类
-
-```
-
-提示词模板：
-"分析以下测试失败信息，进行缺陷分类：
-错误信息：[错误日志]
 测试用例：[测试用例描述]
 执行环境：[环境信息]
 重现步骤：[操作步骤]
@@ -1516,11 +1525,27 @@ thread.count=10
 50. 相关模块影响评估"
 
 ```
+提示词模板：
+"分析以下测试失败信息，进行缺陷分类：
 
-#### 9.25.1.2 步骤2：根因分析
+错误信息：[错误日志]
+测试用例：[测试用例描述]
+执行环境：[环境信息]
+重现步骤：[操作步骤]
+
+请提供：
+1. 缺陷类型分类（功能/性能/安全/兼容性等）
+2. 严重程度评估（严重/一般/轻微）
+3. 可能的根因分析
+4. 修复优先级建议
+5. 相关模块影响评估"
+6. 问题的直接原因
+7. 问题的根本原因
+8. 为什么问题没有被提前发现
+9. 如何防止类似问题再次发生
+10. 修复建议和验证方案"
 
 ```
-
 提示词模板：
 "基于以下缺陷信息进行根因分析：
 缺陷描述：[缺陷详细描述]
@@ -1535,14 +1560,16 @@ thread.count=10
 53. 为什么问题没有被提前发现
 54. 如何防止类似问题再次发生
 55. 修复建议和验证方案"
+58. 数据安全影响
+
+59. 系统稳定性影响
+60. 业务流程影响"
 
 ```
 
-#### 9.25.1.3 步骤3：缺陷影响评估
-
-```
-
+## 9.3.2 实践案例：订单支付缺陷分析
 提示词模板：
+
 "评估以下缺陷的影响范围：
 缺陷详情：[缺陷信息]
 涉及模块：[相关模块]
@@ -1550,24 +1577,24 @@ thread.count=10
 数据影响：[数据完整性影响]
 
 请评估：
-56. 功能影响范围
-57. 用户体验影响
-58. 数据安全影响
-59. 系统稳定性影响
-60. 业务流程影响"
+1. 功能影响范围
+2. 用户体验影响
+3. 数据安全影响
+4. 系统稳定性影响
+5. 业务流程影响"
+发现环境：生产环境
+
+错误日志：
+2024-01-15 14:30:25 ERROR [payment-service] PaymentCallbackHandler - 
+Failed to update order status: Connection timeout
+java.sql.SQLException: Connection is not available, request timed out after 30000ms.
+    at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:695)
+    at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
+    at com.example.service.OrderService.updateOrderStatus(OrderService.java:156)
 
 ```
 
-### 9.3.2 实践案例：订单支付缺陷分析
-
-
-**缺陷场景：** 用户在支付订单时偶尔出现支付成功但订单状态未更新的问题。
-
-**AI辅助缺陷分析过程：**
-
-**第一步：缺陷信息收集**
-
-```
+**第二步：AI辅助分析**
 
 缺陷标题：支付成功后订单状态未更新
 缺陷描述：用户完成支付后，第三方支付平台返回成功状态，但订单状态仍显示"待支付"
@@ -1583,54 +1610,57 @@ java.sql.SQLException: Connection is not available, request timed out after 3000
     at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:197)
     at com.example.service.OrderService.updateOrderStatus(OrderService.java:156)
 
-```
+请进行全面分析"
 
-**第二步：AI辅助分析**
+AI输出：
 
-```
 
+```markdown
 输入提示词：
 "分析以下支付系统缺陷：
 错误信息：支付成功后订单状态未更新，数据库连接超时
 测试用例：用户支付订单流程测试
 执行环境：生产环境，高并发场景
 重现步骤：
-61. 用户选择商品创建订单
-62. 选择第三方支付方式
-63. 完成支付操作
-64. 第三方支付平台回调通知支付成功
-65. 系统处理回调时数据库连接超时
-66. 订单状态未能更新为"已支付"
+1. 用户选择商品创建订单
+2. 选择第三方支付方式
+3. 完成支付操作
+4. 第三方支付平台回调通知支付成功
+5. 系统处理回调时数据库连接超时
+6. 订单状态未能更新为"已支付"
 
 请进行全面分析"
 
 AI输出：
 
-```markdown
-# 第9章 缺陷分析报告
-
-
-## 9.26 1. 缺陷分类
-
-**缺陷类型：** 功能缺陷 + 性能缺陷
-**严重程度：** 严重（影响核心业务流程）
-**优先级：** P1（需要立即修复）
-**影响范围：** 支付模块、订单模块、用户体验
-
-## 9.27 2. 根因分析
-
-
-### 9.27.1 2.1 直接原因
-
-- 数据库连接池耗尽，导致获取连接超时
-- 支付回调处理时无法更新订单状态
-- 缺乏有效的重试机制
-
 ### 9.27.2 2.2 根本原因分析
 
 
 <div class="chart-container">
+
 ```mermaid
+fishbone
+    title 支付状态更新失败根因分析
+    
+    "数据库连接问题" : {
+        "连接池配置不当": ["最大连接数过小", "连接超时时间过短"],
+        "连接泄露": ["未正确关闭连接", "长时间占用连接"],
+        "数据库性能": ["慢查询", "锁等待"]
+    }
+    
+    "系统设计问题" : {
+        "缺乏重试机制": ["单次失败即放弃", "无指数退避策略"],
+        "缺乏监控告警": ["无连接池监控", "无失败率监控"],
+        "事务设计不当": ["事务时间过长", "事务隔离级别不当"]
+    }
+    
+    "并发处理问题" : {
+        "高并发冲击": ["支付高峰期", "秒杀活动"],
+        "资源竞争": ["数据库锁竞争", "连接池竞争"]
+    }
+    
+    "测试覆盖不足" : {
+        "性能测试不足": ["未模拟高并发", "未测试连接池极限"],
 fishbone
     title 支付状态更新失败根因分析
     
@@ -1655,28 +1685,6 @@ fishbone
         "性能测试不足": ["未模拟高并发", "未测试连接池极限"],
         "异常场景测试": ["未测试数据库故障", "未测试网络异常"]
     }
-
-```
-
-### 9.27.3 2.3 为什么问题没有被提前发现
-
-67. **测试环境与生产环境差异**
-   - 测试环境并发量低，未暴露连接池问题
-   - 测试数据量小，数据库性能问题不明显
-
-68. **测试用例覆盖不足**
-   - 缺少高并发支付场景测试
-   - 缺少数据库连接异常的测试用例
-   - 缺少支付回调失败的重试测试
-
-69. **监控体系不完善**
-   - 缺少数据库连接池监控
-   - 缺少支付回调成功率监控
-   - 缺少订单状态一致性监控
-
-## 9.28 3. 影响评估
-
-
 ### 9.28.1 3.1 业务影响
 
 - **用户体验：** 用户支付成功但订单显示未支付，造成困惑
@@ -1825,7 +1833,7 @@ fishbone
 83. **异常处理的重要性**：必须考虑各种异常场景的处理
 84. **数据一致性设计**：分布式系统必须考虑最终一致性
 
-```
+```java
 
 ### 9.3.3 缺陷跟踪管理模板
 
@@ -1848,11 +1856,10 @@ fishbone
 
 - **缺陷标题：** [简洁描述缺陷]
 - **缺陷类型：** □功能缺陷 □性能缺陷 □界面缺陷 □兼容性缺陷 □安全缺陷
-- **严重程度：** □阻塞 □严重 □一般 □轻微
-- **优先级：** □P1 □P2 □P3 □P4
-- **影响模块：** [相关功能模块]
+### 9.3.3 缺陷跟踪管理模板
 
-## 9.35 缺陷描述
+
+**缺陷报告模板：**
 
 ### 9.35.1 问题现象
 
@@ -1891,7 +1898,7 @@ fishbone
 
 ### 9.37.1 错误日志
 
-```
+```json
 
 [粘贴相关错误日志]
 
@@ -1915,8 +1922,7 @@ fishbone
 ### 9.38.2 业务影响
 
 [描述对业务流程的影响]
-
-### 9.38.3 技术影响
+[粘贴相关错误日志]
 
 [描述对系统技术层面的影响]
 
@@ -1951,7 +1957,7 @@ fishbone
 - **关闭原因：** □已修复 □重复缺陷 □设计如此 □无法重现 □不予修复
 - **关闭说明：** [关闭原因说明]
 
-```
+```jsx
 
 **缺陷状态流转图：**
 
@@ -1976,7 +1982,10 @@ stateDiagram-v2
     
     已验证 --> 已关闭 : 确认修复
     已关闭 --> [*]
+**缺陷状态流转图：**
 
+
+<div class="chart-container">
 ```
 
 通过这些优化的测试管理实践，团队可以建立完善的测试体系，确保软件质量和用户体验。

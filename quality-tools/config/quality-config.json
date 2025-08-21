@@ -1,0 +1,62 @@
+{
+  "backup": {
+    "enabled": true,
+    "directory": ".quality-backups",
+    "maxBackups": 10,
+    "autoCleanup": true
+  },
+  "validation": {
+    "strictMode": false,
+    "rules": {
+      "code-block-closed": {
+        "enabled": true,
+        "severity": "error"
+      },
+      "table-structure": {
+        "enabled": true,
+        "severity": "warning",
+        "maxColumns": 8
+      },
+      "mermaid-syntax": {
+        "enabled": true,
+        "severity": "warning",
+        "maxNodes": 20,
+        "requireDirection": true
+      },
+      "heading-hierarchy": {
+        "enabled": true,
+        "severity": "warning",
+        "allowSkipping": false
+      }
+    }
+  },
+  "fixing": {
+    "dryRun": false,
+    "verbose": true,
+    "createBackup": true,
+    "validateAfterFix": true
+  },
+  "reporting": {
+    "format": "markdown",
+    "includeStats": true,
+    "outputPath": "quality-reports",
+    "timestampReports": true
+  },
+  "filePatterns": {
+    "include": [
+      "docs/**/*.md",
+      "*.md"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "**/.DS_Store",
+      "**/Thumbs.db"
+    ]
+  },
+  "performance": {
+    "maxFileSize": "10MB",
+    "parallelProcessing": true,
+    "maxConcurrency": 4
+  }
+}

@@ -1,0 +1,54 @@
+name: Quality Tools Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths: 
+      - 'quality-tools/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'quality-tools/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: 'quality-tools/package-lock.json'
+
+    - name: Install dependencies
+      working-directory: ./quality-tools
+      run: npm ci
+
+    - name: Run linting
+      working-directory: ./quality-tools
+      run: npm run lint
+
+    - name: Run tests
+      working-directory: ./quality-tools
+      run: npm test
+
+    - name: Generate coverage report
+      working-directory: ./quality-tools
+      run: npm run test:coverage
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./quality-tools/coverage/lcov.info
+        flags: quality-tools
+        name: quality-tools-coverage
+        fail_ci_if_error: false

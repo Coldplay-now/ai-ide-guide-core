@@ -9,8 +9,7 @@
 
 #### 7.1.1.1 步骤1：架构需求分析
 
-```
-
+```yaml
 提示词模板：
 "基于以下项目需求，请分析架构设计要点：
 项目类型：[Web应用/移动应用/微服务/单体应用]
@@ -30,7 +29,7 @@
 
 #### 7.1.1.2 步骤2：架构模式推荐
 
-```
+```yaml
 
 提示词模板：
 "为以下场景推荐合适的架构模式：
@@ -44,13 +43,13 @@
 6. 设计原则应用
 7. 架构分层策略
 8. 组件交互方式"
-
 ```
 
 #### 7.1.1.3 步骤3：架构图生成
 
-```
+```yaml
 
+提示词模板：
 提示词模板：
 "生成系统架构图的Mermaid代码：
 系统组件：[组件列表]
@@ -64,8 +63,6 @@
 11. 数据访问层
 12. 基础设施层"
 
-```
-
 ### 7.1.2 实践案例：电商平台架构设计
 
 
@@ -75,8 +72,10 @@
 
 **第一步：架构需求分析**
 
-```
+```markdown
 
+输入提示词：
+"基于以下电商平台需求，请分析架构设计要点：
 输入提示词：
 "基于以下电商平台需求，请分析架构设计要点：
 项目类型：B2C电商Web应用
@@ -90,22 +89,27 @@ AI输出：
 架构设计分析结果：
 
 🏗️ 架构风格建议：
-13. 主架构：微服务架构
+
+1. 主架构：微服务架构
+
    - 优势：可独立部署、扩展，技术栈灵活
    - 适用性：支持高并发，便于团队协作
    
-14. 备选架构：模块化单体架构
+1. 备选架构：模块化单体架构
+
    - 优势：部署简单，开发效率高
    - 适用性：团队规模较小时的选择
 
 🎯 关键架构决策点：
-15. 服务拆分策略：按业务域拆分（用户、商品、订单、支付）
-16. 数据一致性：采用最终一致性，关键业务使用分布式事务
-17. 缓存策略：Redis集群，多级缓存架构
-18. 消息队列：RabbitMQ处理异步任务
-19. 负载均衡：Nginx + Spring Cloud Gateway
+
+1. 服务拆分策略：按业务域拆分（用户、商品、订单、支付）
+2. 数据一致性：采用最终一致性，关键业务使用分布式事务
+3. 缓存策略：Redis集群，多级缓存架构
+4. 消息队列：RabbitMQ处理异步任务
+5. 负载均衡：Nginx + Spring Cloud Gateway
 
 💻 技术栈推荐：
+
 - 后端：Spring Boot + Spring Cloud
 - 数据库：MySQL主从 + Redis集群
 - 消息队列：RabbitMQ
@@ -114,22 +118,24 @@ AI输出：
 - 监控：Prometheus + Grafana
 
 ⚠️ 潜在架构风险：
-20. 微服务复杂性：服务间通信、数据一致性挑战
-21. 分布式事务：跨服务事务处理复杂
-22. 服务治理：服务发现、配置管理、监控复杂度
-23. 团队协作：需要DevOps能力支撑
+
+1. 微服务复杂性：服务间通信、数据一致性挑战
+2. 分布式事务：跨服务事务处理复杂
+3. 服务治理：服务发现、配置管理、监控复杂度
+4. 团队协作：需要DevOps能力支撑
 
 🛡️ 风险缓解策略：
-24. 采用Spring Cloud生态简化微服务开发
-25. 使用Saga模式处理分布式事务
-26. 建立完善的监控和日志体系
-27. 逐步从单体向微服务演进
 
-```
-
+1. 采用Spring Cloud生态简化微服务开发
+2. 使用Saga模式处理分布式事务
+3. 建立完善的监控和日志体系
+4. 逐步从单体向微服务演进
 **第二步：详细架构设计**
 
-```
+```jsx
+
+输入提示词：
+"为电商平台生成详细的微服务架构图，包括各个服务和基础设施组件"
 
 输入提示词：
 "为电商平台生成详细的微服务架构图，包括各个服务和基础设施组件"
@@ -138,8 +144,6 @@ AI输出：
 
 
 <div class="chart-container">
-```mermaid
-graph TB
     %% 用户层
     Web[Web前端]
     Mobile[移动端]
@@ -240,13 +244,12 @@ graph TB
     style CartService fill:#f3e5f5
     style NotificationService fill:#f3e5f5
 
-```
+```yaml
 
 **第三步：架构决策记录**
 
 ```
-
-架构决策记录 (ADR-001)
+**第三步：架构决策记录**
 
 标题：采用微服务架构
 
@@ -281,9 +284,14 @@ graph TB
 - 建立完善的监控和日志体系
 - 采用容器化部署简化运维
 
-```
+```yaml
 
 ### 7.1.3 架构评估与优化
+
+
+**AI辅助架构评估检查清单：**
+
+### 7.1.3 架构评估与优化 2
 
 
 **AI辅助架构评估检查清单：**
@@ -291,15 +299,15 @@ graph TB
 | 评估维度 | 评估项目 | 评估标准 | 评估结果 |
 | --------- | --------- | --------- | ---------- |
 | **可扩展性** | 水平扩展能力 | 是否支持无状态扩展 | □优秀 □良好 □需改进 |
-|  | 垂直扩展能力 | 是否支持资源动态调整 | □优秀 □良好 □需改进 |
+| - | 垂直扩展能力 | 是否支持资源动态调整 | □优秀 □良好 □需改进 |
 | **可用性** | 故障隔离 | 单点故障是否影响整体 | □优秀 □良好 □需改进 |
-|  | 容错机制 | 是否有熔断、重试机制 | □优秀 □良好 □需改进 |
+| - | 容错机制 | 是否有熔断、重试机制 | □优秀 □良好 □需改进 |
 | **性能** | 响应时间 | 是否满足性能要求 | □优秀 □良好 □需改进 |
-|  | 吞吐量 | 是否支持预期并发量 | □优秀 □良好 □需改进 |
+| - | 吞吐量 | 是否支持预期并发量 | □优秀 □良好 □需改进 |
 | **安全性** | 数据安全 | 敏感数据是否加密 | □优秀 □良好 □需改进 |
-|  | 访问控制 | 是否有完善的权限控制 | □优秀 □良好 □需改进 |
+| - | 访问控制 | 是否有完善的权限控制 | □优秀 □良好 □需改进 |
 | **可维护性** | 代码质量 | 是否遵循设计原则 | □优秀 □良好 □需改进 |
-|  | 文档完整性 | 架构文档是否完整 | □优秀 □良好 □需改进 |
+| - | 文档完整性 | 架构文档是否完整 | □优秀 □良好 □需改进 |
 
 ## 7.2 详细设计
 
@@ -307,61 +315,67 @@ graph TB
 ### 7.2.1 AI辅助详细设计操作步骤
 
 
+
 #### 7.2.1.1 步骤1：类图和接口设计
-
-```
-
-提示词模板：
-"基于以下需求生成类图设计：
 功能模块：[模块名称]
 主要实体：[实体列表]
 业务规则：[业务逻辑描述]
 接口要求：[接口规范]
 
-请生成：
-32. 核心实体类设计
-33. 服务接口定义
-34. 数据访问对象设计
-35. 类之间的关系图"
 
-```
+请生成：
+1. 核心实体类设计
+2. 服务接口定义
+3. 数据访问对象设计
+4. 类之间的关系图"
+
+```yaml
 
 #### 7.2.1.2 步骤2：设计模式应用
 
 ```
 
 提示词模板：
-"为以下场景推荐合适的设计模式：
-问题描述：[具体问题]
+
+#### 7.2.1.2 步骤2：设计模式应用
 约束条件：[技术和业务约束]
+
 质量要求：[可维护性、可扩展性等要求]
 
 请推荐：
-36. 适用的设计模式
-37. 模式应用方式
-38. 实现示例代码
-39. 模式的优缺点分析"
+1. 适用的设计模式
+2. 模式应用方式
+3. 实现示例代码
+4. 模式的优缺点分析"
 
-```
+```yaml
 
 #### 7.2.1.3 步骤3：数据库设计
 
 ```
 
 提示词模板：
+
 "设计数据库表结构：
-业务实体：[实体列表]
-实体关系：[实体间关系]
+
+#### 7.2.1.3 步骤3：数据库设计
 业务规则：[数据约束规则]
 性能要求：[查询性能要求]
 
 请提供：
-40. 表结构设计（DDL）
-41. 索引设计建议
-42. 数据关系图（ERD）
-43. 性能优化建议"
+1. 表结构设计（DDL）
+2. 索引设计建议
+3. 数据关系图（ERD）
+4. 性能优化建议"
 
-```
+```yaml
+
+### 7.2.2 实践案例：订单管理系统详细设计
+
+
+**业务背景：** 设计电商平台的订单管理系统，包括订单创建、状态跟踪、支付处理等功能。
+
+**AI辅助详细设计过程：**
 
 ### 7.2.2 实践案例：订单管理系统详细设计
 
@@ -371,14 +385,6 @@ graph TB
 **AI辅助详细设计过程：**
 
 **第一步：核心类设计**
-
-```
-
-输入提示词：
-"为订单管理系统生成核心类设计：
-功能模块：订单管理
-主要实体：订单、订单项、用户、商品、支付记录
-业务规则：
 - 订单包含多个订单项
 - 订单有状态流转（待支付->已支付->已发货->已完成）
 - 支持订单取消和退款
@@ -389,6 +395,15 @@ graph TB
 AI输出：
 
 ```java
+// 订单实体类
+@Entity
+@Table(name = "orders")
+public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    @Column(name = "order_no", unique = true, nullable = false)
 // 订单实体类
 @Entity
 @Table(name = "orders")
@@ -474,30 +489,35 @@ public class OrderItem {
     private BigDecimal subtotal;
     
     // 构造函数、getter、setter省略
+
 }
 
 // 订单服务接口
 public interface OrderService {
     /**
      - 创建订单
+
      */
 
     Order createOrder(CreateOrderRequest request);
     
     /**
      - 更新订单状态
+
      */
 
     void updateOrderStatus(Long orderId, OrderStatus status);
     
     /**
      - 取消订单
+
      */
 
     void cancelOrder(Long orderId, String reason);
     
     /**
      - 查询订单详情
+
      */
 
     OrderDetailResponse getOrderDetail(Long orderId);
@@ -572,25 +592,16 @@ public class OrderServiceImpl implements OrderService {
     // 其他方法实现省略...
 }
 
-```
+AI输出：
+推荐使用状态模式(State Pattern)来管理订单状态转换：
 
-**第二步：设计模式应用**
-
-```
+```java
 
 输入提示词：
 "为订单状态管理推荐合适的设计模式，需要处理复杂的状态转换逻辑"
 
 AI输出：
 推荐使用状态模式(State Pattern)来管理订单状态转换：
-
-```java
-// 订单状态处理接口
-public interface OrderStatusHandler {
-    void handleStatusChange(Order order, OrderStatus newStatus);
-    boolean canTransitionTo(OrderStatus currentStatus, OrderStatus newStatus);
-}
-
 // 抽象状态处理器
 public abstract class AbstractOrderStatusHandler implements OrderStatusHandler {
     
@@ -677,10 +688,20 @@ public class OrderStatusHandlerFactory {
     public OrderStatusHandler getHandler(OrderStatus status) {
         return handlers.get(status);
     }
+
 }
 
-```
+```yaml
 
+**设计模式优势分析：**
+1. **单一职责**：每个状态处理器只负责特定状态的业务逻辑
+2. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
+3. **可维护性**：状态转换逻辑集中管理，便于维护和测试
+4. **可扩展性**：支持复杂的状态转换规则和业务逻辑
+
+**第三步：数据库设计**
+
+```
 **设计模式优势分析：**
 44. **单一职责**：每个状态处理器只负责特定状态的业务逻辑
 45. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
@@ -688,15 +709,16 @@ public class OrderStatusHandlerFactory {
 47. **可扩展性**：支持复杂的状态转换规则和业务逻辑
 
 **第三步：数据库设计**
-
-```
-
-输入提示词：
-"为订单管理系统设计数据库表结构，考虑查询性能和数据一致性"
-
-AI输出：
-
-```sql
+CREATE TABLE orders (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    order_no VARCHAR(32) NOT NULL UNIQUE COMMENT '订单号',
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    status VARCHAR(20) NOT NULL COMMENT '订单状态',
+    total_amount DECIMAL(10,2) NOT NULL COMMENT '订单总金额',
+    payment_amount DECIMAL(10,2) DEFAULT 0 COMMENT '实际支付金额',
+    discount_amount DECIMAL(10,2) DEFAULT 0 COMMENT '优惠金额',
+    shipping_fee DECIMAL(10,2) DEFAULT 0 COMMENT '运费',
+    receiver_name VARCHAR(50) COMMENT '收货人姓名',
 -- 订单主表
 CREATE TABLE orders (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -768,17 +790,6 @@ CREATE TABLE payment_records (
     INDEX idx_payment_time (payment_time),
     FOREIGN KEY (order_id) REFERENCES orders(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='支付记录表';
-
-```
-
-**性能优化建议：**
-48. **索引优化**：
-   - 为常用查询字段创建索引（user_id, status, created_time）
-   - 使用复合索引优化多条件查询
-   
-49. **分表策略**：
-   - 按时间分表：orders_202401, orders_202402
-   - 按用户ID哈希分表：提高并发写入性能
    
 50. **缓存策略**：
    - 热点订单数据缓存到Redis
@@ -794,7 +805,20 @@ CREATE TABLE payment_records (
 **RESTful API设计模板：**
 
 ```yaml
-# 第7章 订单管理API设计规范
+
+## 第7章 订单管理API设计规范
+
+openapi: 3.0.0
+info:
+  title: 订单管理API
+  version: 1.0.0
+  description: 电商平台订单管理系统API
+
+paths:
+  /api/v1/orders:
+    post:
+
+## 第7章 订单管理API设计规范 2
 
 openapi: 3.0.0
 info:
@@ -822,6 +846,7 @@ paths:
                 $ref: '#/components/schemas/OrderResponse'
         '400':
           description: 请求参数错误
+
         '409':
           description: 库存不足
     
@@ -829,18 +854,21 @@ paths:
       summary: 查询订单列表
       tags: [订单管理]
       parameters:
+
         - name: userId
 
           in: query
           required: true
           schema:
             type: integer
+
             format: int64
         - name: status
 
           in: query
           schema:
             type: string
+
             enum: [PENDING_PAYMENT, PAID, SHIPPED, DELIVERED, COMPLETED, CANCELLED]
         - name: page
 
@@ -860,6 +888,7 @@ paths:
           content:
             application/json:
               schema:
+
                 $ref: '#/components/schemas/OrderListResponse'
 
   /api/v1/orders/{orderId}:
@@ -881,6 +910,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/OrderDetailResponse'
+
         '404':
           description: 订单不存在
     
@@ -907,6 +937,7 @@ paths:
         '400':
           description: 状态转换不合法
         '404':
+
           description: 订单不存在
 
 components:
@@ -930,6 +961,7 @@ components:
           description: 订单项列表
         receiverInfo:
           $ref: '#/components/schemas/ReceiverInfo'
+
         remark:
           type: string
           description: 订单备注
@@ -946,6 +978,7 @@ components:
           format: int64
           description: 商品ID
         quantity:
+
           type: integer
           minimum: 1
           description: 购买数量
@@ -970,37 +1003,37 @@ components:
           type: string
           maxLength: 200
           description: 收货地址
-
-```
-
-## 7.3 设计评审
-
-
-### 7.3.1 设计评审模板
-
-
-**设计评审检查清单：**
-
 | 评审类别 | 检查项目 | 检查标准 | 评审结果 | 备注 |
 | --------- | --------- | --------- | ---------- | ------ |
-| **架构设计** | 架构风格适用性 | 是否适合业务场景和技术约束 | □通过 □不通过 |  |
-|  | 组件职责清晰 | 各组件职责是否单一明确 | □通过 □不通过 |  |
-|  | 接口设计合理 | 组件间接口是否简洁清晰 | □通过 □不通过 |  |
-|  | 可扩展性 | 是否支持未来功能扩展 | □通过 □不通过 |  |
-| **详细设计** | 类设计合理性 | 类的职责是否单一，耦合度是否合理 | □通过 □不通过 |  |
-|  | 设计模式应用 | 设计模式使用是否恰当 | □通过 □不通过 |  |
-|  | 数据模型设计 | 数据模型是否满足业务需求 | □通过 □不通过 |  |
-|  | API设计规范 | API设计是否符合RESTful规范 | □通过 □不通过 |  |
-| **质量属性** | 性能设计 | 是否考虑性能优化点 | □通过 □不通过 |  |
-|  | 安全设计 | 是否有完善的安全措施 | □通过 □不通过 |  |
-|  | 可维护性 | 代码结构是否便于维护 | □通过 □不通过 |  |
-|  | 可测试性 | 设计是否便于单元测试 | □通过 □不通过 |  |
-| **文档质量** | 设计文档完整性 | 设计文档是否完整准确 | □通过 □不通过 |  |
-|  | 图表清晰性 | 设计图表是否清晰易懂 | □通过 □不通过 |  |
+| **架构设计** | 架构风格适用性 | 是否适合业务场景和技术约束 | □通过 □不通过 | - |
+| - | 组件职责清晰 | 各组件职责是否单一明确 | □通过 □不通过 | - |
+| - | 接口设计合理 | 组件间接口是否简洁清晰 | □通过 □不通过 | - |
+| - | 可扩展性 | 是否支持未来功能扩展 | □通过 □不通过 | - |
+| **详细设计** | 类设计合理性 | 类的职责是否单一，耦合度是否合理 | □通过 □不通过 | - |
+| - | 设计模式应用 | 设计模式使用是否恰当 | □通过 □不通过 | - |
+| - | 数据模型设计 | 数据模型是否满足业务需求 | □通过 □不通过 | - |
+| - | API设计规范 | API设计是否符合RESTful规范 | □通过 □不通过 | - |
+| **质量属性** | 性能设计 | 是否考虑性能优化点 | □通过 □不通过 | - |
+| - | 安全设计 | 是否有完善的安全措施 | □通过 □不通过 | - |
+| - | 可维护性 | 代码结构是否便于维护 | □通过 □不通过 | - |
+| - | 可测试性 | 设计是否便于单元测试 | □通过 □不通过 | - |
+| **文档质量** | 设计文档完整性 | 设计文档是否完整准确 | □通过 □不通过 | - |
+| - | 图表清晰性 | 设计图表是否清晰易懂 | □通过 □不通过 | - |
 
 **设计评审报告模板：**
 
 ```markdown
+# 第7章 设计评审报告
+
+
+## 7.4 基本信息
+
+- 项目名称：[项目名称]
+- 评审日期：[评审日期]
+- 评审版本：[设计文档版本]
+- 评审人员：[评审人员列表]
+
+## 7.5 评审概要
 # 第7章 设计评审报告
 
 
@@ -1060,33 +1093,23 @@ components:
 - 架构师：[签名] [日期]
 - 技术负责人：[签名] [日期]
 - 项目经理：[签名] [日期]
-
-```
-
-### 7.3.2 设计工具集成指南
-
-
-**推荐设计工具及集成方式：**
-
-| 工具类型 | 推荐工具 | 主要功能 | 集成方式 |
-| --------- | --------- | --------- | ---------- |
-| **架构设计** | Draw.io | 系统架构图、组件图 | 在线工具，支持多人协作 |
-|  | Lucidchart | 复杂架构图、流程图 | 集成到Confluence |
+| - | Lucidchart | 复杂架构图、流程图 | 集成到Confluence |
 | **UML建模** | PlantUML | 类图、时序图、用例图 | 代码化UML，版本控制 |
-|  | StarUML | 可视化UML建模 | 导出图片到文档 |
+| - | StarUML | 可视化UML建模 | 导出图片到文档 |
 | **API设计** | Swagger Editor | API文档设计 | 集成到开发环境 |
-|  | Postman | API测试和文档 | 团队共享API集合 |
+| - | Postman | API测试和文档 | 团队共享API集合 |
 | **数据库设计** | MySQL Workbench | ER图设计 | 导出DDL脚本 |
-|  | dbdiagram.io | 在线ER图设计 | 支持代码生成 |
+| - | dbdiagram.io | 在线ER图设计 | 支持代码生成 |
 | **原型设计** | Figma | 界面原型设计 | 开发者模式查看规范 |
-|  | Axure RP | 交互原型设计 | 导出HTML原型 |
+| - | Axure RP | 交互原型设计 | 导出HTML原型 |
 
 **工具集成最佳实践：**
 
 56. **版本控制集成**
 
 ```bash
-# 第7章 将设计文件纳入版本控制
+
+## 第7章 将设计文件纳入版本控制
 
 docs/
 ├── architecture/
@@ -1097,15 +1120,29 @@ docs/
 │   ├── order-api.yaml
 │   └── user-api.yaml
 └── database/
+
+## 第7章 将设计文件纳入版本控制 2
+
+docs/
+├── architecture/
+│   ├── system-architecture.drawio
+
+│   ├── component-diagram.puml
+│   └── deployment-diagram.png
+├── api/
+│   ├── order-api.yaml
+│   └── user-api.yaml
+└── database/
     ├── schema.sql
     └── er-diagram.png
+    paths:
+      - 'docs/**'
 
-```
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
 
-57. **CI/CD集成**
-
-```yaml
-# 第7章 .github/workflows/docs.yml
+## 第7章 .github/workflows/docs.yml
 
 name: Generate Documentation
 on:
@@ -1127,12 +1164,12 @@ jobs:
 
         run: |
           swagger-codegen generate -i docs/api/order-api.yaml -l html2 -o docs/api/html/
+  "drawio-integration.theme": "Kennedy"
+}
 
 ```
 
-58. **团队协作配置**
-
-```json
+通过这些工具和集成方式，团队可以建立高效的设计协作流程，确保设计质量和一致性。
 // .vscode/settings.json
 {
   "plantuml.server": "https://www.plantuml.com/plantuml",
@@ -1140,7 +1177,3 @@ jobs:
   "swagger-viewer.defaultHost": "localhost:8080",
   "drawio-integration.theme": "Kennedy"
 }
-
-```
-
-通过这些工具和集成方式，团队可以建立高效的设计协作流程，确保设计质量和一致性。

@@ -1,0 +1,43 @@
+{
+  "name": "ai-ide-guide-quality-tools",
+  "version": "1.0.0",
+  "description": "Quality fixing and optimization tools for AI IDE Guide documentation",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "quality-tools": "./src/cli.js",
+    "maintenance-tools": "./src/cli-maintenance.js"
+  },
+  "scripts": {
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src/**/*.js",
+    "fix": "node src/cli.js",
+    "validate": "node src/validator.js",
+    "backup": "node src/backup.js",
+    "rollback": "node src/rollback.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.10",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "markdown-it": "^13.0.2",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.4",
+    "@vitest/coverage-v8": "^1.0.4",
+    "eslint": "^8.55.0"
+  },
+  "keywords": [
+    "documentation",
+    "quality",
+    "markdown",
+    "mermaid",
+    "automation"
+  ],
+  "author": "AI IDE Guide Team",
+  "license": "MIT"
+}

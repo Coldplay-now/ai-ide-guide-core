@@ -11,6 +11,7 @@
 
 
 <div class="chart-container">
+
 ```mermaid
 graph TB
     A[AI IDE工具评估] --> B[功能维度]
@@ -19,37 +20,35 @@ graph TB
     A --> E[安全维度]
     A --> F[集成维度]
     A --> G[支持维度]
-    
     B --> B1[代码生成能力]
     B --> B2[智能补全]
     B --> B3[错误检测]
     B --> B4[重构建议]
-    
     C --> C1[响应速度]
     C --> C2[准确率]
     C --> C3[资源消耗]
     C --> C4[并发处理]
-    
     D --> D1[许可费用]
     D --> D2[实施成本]
     D --> D3[维护成本]
     D --> D4[培训成本]
-    
     E --> E1[数据安全]
     E --> E2[访问控制]
     E --> E3[合规性]
     E --> E4[审计能力]
-    
     F --> F1[IDE集成]
     F --> F2[工具链集成]
     F --> F3[API支持]
     F --> F4[扩展能力]
-    
     G --> G1[技术支持]
     G --> G2[社区活跃度]
     G --> G3[文档质量]
     G --> G4[更新频率]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 ### 3.1.2 详细评估标准
@@ -119,6 +118,7 @@ def evaluate_code_generation(tool):
 **3. 错误检测能力 (权重: 15%)**
 
 测试维度包括:
+
 - 语法错误检测准确率
 - 逻辑错误识别能力
 - 性能问题发现能力
@@ -171,6 +171,7 @@ def benchmark_response_time(tool, test_prompts, iterations=100):
 **2. 准确率评估 (权重: 25%)**
 
 使用标准化测试集评估:
+
 - HumanEval基准测试
 - MBPP (Mostly Basic Python Problems)
 - CodeXGLUE基准
@@ -271,32 +272,32 @@ def calculate_tco(tool_config, team_size, project_duration_months):
 
 | 工具名称 | GitHub Copilot | Cursor | Claude Code | Tabnine | Windsurf | CodeWhisperer |
 | ---------- | ---------------- | -------- | ------------- | --------- | ---------- | --------------- |
-| **基本信息** |
+| **基本信息** | - | - | - | - | - | - |
 | 开发商 | Microsoft/GitHub | Anysphere | Anthropic | Tabnine | Codeium | Amazon |
 | 发布年份 | 2021 | 2023 | 2024 | 2019 | 2024 | 2022 |
 | 技术基础 | OpenAI Codex | GPT-4/Claude-3 | Claude-3 | 自研+GPT | 多模型融合 | Amazon自研 |
-| **功能评分** |
+| **功能评分** | - | - | - | - | - | - |
 | 代码生成 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | 智能补全 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 | 错误检测 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
 | 代码重构 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
-| **性能指标** |
+| **性能指标** | - | - | - | - | - | - |
 | 响应速度 | 200-500ms | 100-300ms | 300-800ms | 50-200ms | 100-400ms | 200-500ms |
 | 准确率 | 85% | 88% | 87% | 82% | 86% | 79% |
 | 支持语言数 | 50+ | 50+ | 40+ | 30+ | 70+ | 15+ |
-| **成本信息** |
+| **成本信息** | - | - | - | - | - | - |
 | 个人版价格 | $10/月 | $20/月 | $20/月 | $12/月 | $10/月 | 免费 |
 | 企业版价格 | $19/月 | $40/月 | 定制 | $39/月 | $25/月 | $19/月 |
 | 免费版功能 | 学生免费 | 基础功能 | 有限使用 | 基础功能 | 完整功能 | 完整功能 |
-| **安全特性** |
+| **安全特性** | - | - | - | - | - | - |
 | 本地部署 | ❌ | 部分支持 | ❌ | ✅ | 部分支持 | ❌ |
 | 数据加密 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 合规认证 | SOC2 | 部分 | SOC2 | SOC2/ISO27001 | 部分 | SOC2/FedRAMP |
-| **集成能力** |
+| **集成能力** | - | - | - | - | - | - |
 | IDE支持 | 20+ | 独立IDE | API集成 | 20+ | 独立IDE | 10+ |
 | API可用性 | 有限 | 完整 | 完整 | 企业版 | 完整 | AWS集成 |
 | 扩展性 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **支持质量** |
+| **支持质量** | - | - | - | - | - | - |
 | 文档质量 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
 | 社区活跃度 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
 | 技术支持 | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ |
@@ -370,6 +371,7 @@ class UserAuthSystem:
 ```
 
 **评估结果**:
+
 - **Cursor**: 生成更完整的实现，包含输入验证、安全哈希、错误处理
 - **GitHub Copilot**: 生成基础框架，需要手动添加安全特性
 - **Claude Code**: 注重安全性，会主动添加安全检查和最佳实践
@@ -408,35 +410,36 @@ def fibonacci(n):
 #### 3.2.3.1 响应时间对比
 
 
-
 <div class="chart-container">
+
 ```mermaid
 graph TB
     A[响应时间对比] --> B[代码补全]
     A --> C[代码生成]
     A --> D[错误检测]
-    
     B --> B1[Tabnine: 50-200ms]
     B --> B2[Cursor: 100-300ms]
     B --> B3[Windsurf: 100-400ms]
     B --> B4[GitHub Copilot: 200-500ms]
     B --> B5[CodeWhisperer: 200-500ms]
     B --> B6[Claude Code: 300-800ms]
-    
     C --> C1[Cursor: 200-600ms]
     C --> C2[Windsurf: 300-800ms]
     C --> C3[GitHub Copilot: 400-900ms]
     C --> C4[Claude Code: 500-1200ms]
     C --> C5[Tabnine: 300-700ms]
     C --> C6[CodeWhisperer: 400-1000ms]
-    
     D --> D1[Cursor: 100-400ms]
     D --> D2[Claude Code: 200-600ms]
     D --> D3[CodeWhisperer: 300-700ms]
     D --> D4[GitHub Copilot: 300-800ms]
     D --> D5[Windsurf: 200-500ms]
     D --> D6[Tabnine: 400-900ms]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 #### 3.2.3.2 资源消耗对比
@@ -457,31 +460,25 @@ graph TB
 ### 3.3.1 决策流程图
 
 
-
 <div class="chart-container">
+
 ```mermaid
 flowchart TD
     A[开始选型] --> B{团队规模?}
-    
     B -->|1-5人| C[小团队方案]
     B -->|6-20人| D[中型团队方案]
     B -->|20+人| E[大型团队方案]
-    
     C --> F{预算限制?}
     F -->|<$50/月| G[推荐: Windsurf/CodeWhisperer]
     F -->|$50-200/月| H[推荐: GitHub Copilot]
-    
     D --> I{安全要求?}
     I -->|高| J[推荐: Tabnine Enterprise]
-    I -->|中等| K[推荐: Cursor/GitHub Copilot Business]
-    
+    I -->|中等| K[推荐: Cursor/GitHub Copilot B...]
     E --> L{部署方式?}
     L -->|本地部署| M[推荐: Tabnine Enterprise]
     L -->|云端部署| N{技术栈?}
-    
     N -->|AWS重度使用| O[推荐: CodeWhisperer]
     N -->|通用技术栈| P[推荐: Cursor Enterprise]
-    
     G --> Q[评估试用]
     H --> Q
     J --> Q
@@ -489,18 +486,20 @@ flowchart TD
     M --> Q
     O --> Q
     P --> Q
-    
     Q --> R{试用满意?}
     R -->|是| S[正式采用]
     R -->|否| T[重新评估]
     T --> B
-    
     S --> U[制定实施计划]
     U --> V[团队培训]
     V --> W[逐步推广]
     W --> X[效果评估]
     X --> Y[持续优化]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 ### 3.3.2 详细决策标准
@@ -805,35 +804,34 @@ for i, (tool, score) in enumerate(recommendations, 1):
 #### 3.4.1.1 迁移阶段划分
 
 
-
 <div class="chart-container">
+
 ```mermaid
 graph LR
     A[评估阶段] --> B[准备阶段]
     B --> C[试点阶段]
     C --> D[推广阶段]
     D --> E[优化阶段]
-    
     A1[现状分析] --> A
     A2[需求评估] --> A
     A3[工具选型] --> A
-    
     B1[环境准备] --> B
     B2[团队培训] --> B
     B3[配置设置] --> B
-    
     C1[小范围试用] --> C
     C2[问题收集] --> C
     C3[流程调整] --> C
-    
     D1[全面部署] --> D
     D2[监控评估] --> D
     D3[支持服务] --> D
-    
     E1[性能优化] --> E
     E2[流程改进] --> E
     E3[持续更新] --> E
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 #### 3.4.1.2 详细迁移计划模板
@@ -908,6 +906,7 @@ AI IDE迁移计划模板:
 
 
 **迁移挑战**:
+
 - 开发习惯改变
 - 学习曲线陡峭
 - 工作流程调整
@@ -990,6 +989,7 @@ class GradualMigrationPlan:
 
 
 **迁移考虑因素**:
+
 - 功能差异对比
 - 配置和设置迁移
 - 快捷键和操作习惯

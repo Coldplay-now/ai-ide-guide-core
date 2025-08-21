@@ -11,37 +11,36 @@ AI IDE投资的成本分析需要考虑直接成本和间接成本，以及一�
 
 
 <div class="chart-container">
+
 ```mermaid
 graph TB
     A[AI IDE总成本] --> B[直接成本]
     A --> C[间接成本]
-    
     B --> B1[工具许可费用]
     B --> B2[基础设施成本]
     B --> B3[实施服务费用]
     B --> B4[培训费用]
-    
     C --> C1[学习曲线成本]
     C --> C2[生产力损失]
     C --> C3[管理开销]
     C --> C4[机会成本]
-    
     B1 --> D1[按用户订阅费]
     B1 --> D2[企业许可费]
     B1 --> D3[API使用费]
-    
     B2 --> D4[服务器成本]
     B2 --> D5[存储成本]
     B2 --> D6[网络带宽]
-    
     B3 --> D7[咨询服务]
     B3 --> D8[定制开发]
     B3 --> D9[集成实施]
-    
     B4 --> D10[培训课程]
     B4 --> D11[培训材料]
     B4 --> D12[内部培训师]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 ### 4.1.2 详细成本计算模型
@@ -121,9 +120,11 @@ def calculate_infrastructure_cost(deployment_type, team_size, duration_months):
     }
 
 ```**
+
 1. 培训和实施成本**
 
 ```python
+def calculate_training_implementation_cost(team_size, complexity_level):
 def calculate_training_implementation_cost(team_size, complexity_level):
     """
     计算培训和实施成本
@@ -161,7 +162,6 @@ def calculate_training_implementation_cost(team_size, complexity_level):
         'material_cost': material_cost,
         'total_training_implementation_cost': total_cost
     }
-
 ```
 
 #### 4.1.2.2 间接成本计算
@@ -170,6 +170,7 @@ def calculate_training_implementation_cost(team_size, complexity_level):
 **1. 学习曲线成本**
 
 ```python
+def calculate_learning_curve_cost(team_size, avg_salary, learning_weeks):
 def calculate_learning_curve_cost(team_size, avg_salary, learning_weeks):
     """
     计算学习曲线导致的生产力损失成本
@@ -198,12 +199,12 @@ def calculate_learning_curve_cost(team_size, avg_salary, learning_weeks):
         'average_loss_per_person': total_loss_cost / team_size,
         'learning_weeks': learning_weeks
     }
-
 ```
 
 **2. 管理开销成本**
 
 ```python
+def calculate_management_overhead(team_size, project_duration_months):
 def calculate_management_overhead(team_size, project_duration_months):
     """
     计算管理开销成本
@@ -227,7 +228,6 @@ def calculate_management_overhead(team_size, project_duration_months):
         'tool_administration_cost': tool_admin_cost,
         'total_management_overhead': total_overhead
     }
-
 ```
 
 ### 4.1.3 成本分析实例
@@ -237,6 +237,7 @@ def calculate_management_overhead(team_size, project_duration_months):
 
 
 ```python
+# 第4章 小团队成本分析示例
 # 第4章 小团队成本分析示例
 
 def small_team_cost_analysis():
@@ -307,7 +308,6 @@ def small_team_cost_analysis():
 small_team_analysis = small_team_cost_analysis()
 print(f"小团队总成本: ¥{small_team_analysis['total_cost']:,.0f}")
 print(f"人均月成本: ¥{small_team_analysis['cost_per_person_per_month']:,.0f}")
-
 ```
 
 ## 4.2 效益量化评估框架
@@ -320,37 +320,37 @@ AI IDE带来的效益可以分为直接效益和间接效益，量化效益和�
 
 
 <div class="chart-container">
+
 ```mermaid
+graph TB
 graph TB
     A[AI IDE效益] --> B[直接效益]
     A --> C[间接效益]
-    
     B --> B1[开发效率提升]
     B --> B2[代码质量改善]
     B --> B3[缺陷减少]
     B --> B4[维护成本降低]
-    
     C --> C1[团队能力提升]
     C --> C2[创新能力增强]
     C --> C3[员工满意度]
     C --> C4[竞争优势]
-    
     B1 --> D1[编码速度提升30-50%]
     B1 --> D2[调试时间减少25-40%]
     B1 --> D3[文档生成自动化]
-    
     B2 --> D4[代码规范性提升]
     B2 --> D5[最佳实践应用]
     B2 --> D6[架构设计改善]
-    
     B3 --> D7[语法错误减少]
     B3 --> D8[逻辑错误减少]
     B3 --> D9[安全漏洞减少]
-    
     B4 --> D10[重构效率提升]
     B4 --> D11[技术债务减少]
     B4 --> D12[维护工作量降低]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 ### 4.2.2 量化效益计算方法
@@ -362,6 +362,7 @@ graph TB
 **1. 编码速度提升**
 
 ```python
+def calculate_coding_speed_benefit(team_size, avg_salary, speed_improvement_rate, project_duration):
 def calculate_coding_speed_benefit(team_size, avg_salary, speed_improvement_rate, project_duration):
     """
     计算编码速度提升带来的效益
@@ -389,12 +390,12 @@ def calculate_coding_speed_benefit(team_size, avg_salary, speed_improvement_rate
         'total_coding_speed_benefit': total_benefit,
         'improvement_rate': speed_improvement_rate
     }
-
 ```
 
 **2. 调试时间减少效益**
 
 ```python
+def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate, project_duration):
 def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate, project_duration):
     """
     计算调试时间减少带来的效益
@@ -420,7 +421,6 @@ def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate,
         'total_debugging_benefit': total_benefit,
         'reduction_rate': debugging_reduction_rate
     }
-
 ```
 
 #### 4.2.2.2 代码质量改善效益
@@ -429,6 +429,7 @@ def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate,
 **1. 缺陷减少效益**
 
 ```python
+def calculate_defect_reduction_benefit(team_size, avg_salary, defect_reduction_rate, 
 def calculate_defect_reduction_benefit(team_size, avg_salary, defect_reduction_rate, 
                                      avg_defects_per_month, avg_fix_time_hours):
     """
@@ -452,12 +453,12 @@ def calculate_defect_reduction_benefit(team_size, avg_salary, defect_reduction_r
         'monthly_cost_saved': cost_saved_per_month,
         'annual_defect_reduction_benefit': cost_saved_per_month * 12
     }
-
 ```
 
 **2. 维护成本降低效益**
 
 ```python
+def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_rate, 
 def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_rate, 
                                 maintenance_time_ratio, project_duration):
     """
@@ -479,7 +480,6 @@ def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_r
         'total_maintenance_benefit': total_benefit,
         'reduction_rate': maintenance_reduction_rate
     }
-
 ```
 
 ### 4.2.3 效益评估实例
@@ -489,6 +489,7 @@ def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_r
 
 
 ```python
+def medium_team_benefit_analysis():
 def medium_team_benefit_analysis():
     team_config = {
         'team_size': 15,
@@ -558,7 +559,6 @@ def medium_team_benefit_analysis():
 medium_team_benefit = medium_team_benefit_analysis()
 print(f"中型团队总效益: ¥{medium_team_benefit['total_benefit']:,.0f}")
 print(f"月均效益: ¥{medium_team_benefit['monthly_benefit']:,.0f}")
-
 ```
 
 ## 4.3 ROI计算公式和示例
@@ -571,6 +571,7 @@ print(f"月均效益: ¥{medium_team_benefit['monthly_benefit']:,.0f}")
 
 
 ```python
+def calculate_basic_roi(total_benefits, total_costs):
 def calculate_basic_roi(total_benefits, total_costs):
     """
     计算基础ROI
@@ -585,13 +586,13 @@ def calculate_basic_roi(total_benefits, total_costs):
         'net_benefit': net_benefit,
         'roi_percentage': roi_percentage
     }
-
 ```
 
 #### 4.3.1.2 时间价值调整的ROI (NPV方法)
 
 
 ```python
+def calculate_npv_roi(cash_flows, discount_rate, initial_investment):
 def calculate_npv_roi(cash_flows, discount_rate, initial_investment):
     """
     计算考虑时间价值的ROI (净现值方法)
@@ -615,13 +616,13 @@ def calculate_npv_roi(cash_flows, discount_rate, initial_investment):
         'discount_rate': discount_rate,
         'present_values': present_values
     }
-
 ```
 
 #### 4.3.1.3 投资回收期计算
 
 
 ```python
+def calculate_payback_period(initial_investment, monthly_net_benefits):
 def calculate_payback_period(initial_investment, monthly_net_benefits):
     """
     计算投资回收期
@@ -644,13 +645,13 @@ def calculate_payback_period(initial_investment, monthly_net_benefits):
         'payback_period_years': payback_months / 12,
         'cumulative_benefits_at_payback': cumulative_benefits
     }
-
 ```
 
 ### 4.3.2 综合ROI分析模型
 
 
 ```python
+class ComprehensiveROIAnalyzer:
 class ComprehensiveROIAnalyzer:
     def __init__(self, team_config, tool_config, market_params):
         self.team_config = team_config
@@ -756,7 +757,6 @@ class ComprehensiveROIAnalyzer:
             'quality': 30000,
             'maintenance': 20000
         }
-
 ```
 
 ### 4.3.3 ROI计算实例
@@ -766,6 +766,7 @@ class ComprehensiveROIAnalyzer:
 
 
 ```python
+def complete_roi_example():
 def complete_roi_example():
     """
     完整的ROI分析示例
@@ -837,7 +838,6 @@ def complete_roi_example():
 # 第4章 执行完整ROI分析
 
 roi_result = complete_roi_example()
-
 ```
 
 ## 4.4 风险调整收益分析工具
@@ -849,41 +849,43 @@ roi_result = complete_roi_example()
 #### 4.4.1.1 风险分类框架
 
 
-
 <div class="chart-container">
+
 ```mermaid
+graph TB
 graph TB
     A[AI IDE投资风险] --> B[技术风险]
     A --> C[市场风险]
     A --> D[组织风险]
     A --> E[财务风险]
-    
     B --> B1[工具性能不达预期]
     B --> B2[技术兼容性问题]
     B --> B3[供应商技术变更]
     B --> B4[安全漏洞风险]
-    
     C --> C1[竞争工具出现]
     C --> C2[市场需求变化]
     C --> C3[行业标准变化]
     C --> C4[客户接受度低]
-    
     D --> D1[团队抗拒变化]
     D --> D2[技能不匹配]
     D --> D3[管理支持不足]
     D --> D4[变更管理失败]
-    
     E --> E1[成本超预算]
     E --> E2[收益低于预期]
     E --> E3[现金流问题]
     E --> E4[机会成本过高]
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 #### 4.4.1.2 风险量化模型
 
 
 ```python
+class RiskAssessmentModel:
 class RiskAssessmentModel:
     def __init__(self):
         self.risk_categories = {
@@ -950,13 +952,13 @@ class RiskAssessmentModel:
             'risk_adjusted_roi': risk_adjusted_roi,
             'risk_details': risk_details
         }
-
 ```
 
 ### 4.4.2 蒙特卡洛模拟
 
 
 ```python
+import numpy as np
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -1072,13 +1074,13 @@ print(f"平均ROI: {analysis['mean_roi']:.1f}%")
 print(f"ROI标准差: {analysis['std_roi']:.1f}%")
 print(f"ROI为正的概率: {analysis['probability_positive_roi']*100:.1f}%")
 print(f"ROI超过100%的概率: {analysis['probability_roi_above_threshold']['100%']*100:.1f}%")
-
 ```
 
 ### 4.4.3 敏感性分析
 
 
 ```python
+class SensitivityAnalysis:
 class SensitivityAnalysis:
     def __init__(self, base_case_params):
         self.base_case = base_case_params
@@ -1195,7 +1197,6 @@ print("关键影响因素排序:")
 for i, (factor, impact_data) in enumerate(critical_factors, 1):
     print(f"{i}. {factor}: {impact_data['impact_level']} "
           f"(敏感性系数: {impact_data['sensitivity_coefficient']:.2f})")
-
 ```
 
 ---

@@ -465,8 +465,7 @@ Mermaid流程图标准:
 #### 模板库结构
 
 
-```
-
+```python
 templates/
 ├── tables/
 │   ├── comparison-table.md          # 对比表格模板
@@ -495,6 +494,7 @@ templates/
 
 ```yaml
 质量检查项目:
+质量检查项目:
   内容准确性:
     - [ ] 数据来源可靠且最新
     - [ ] 计算方法正确无误
@@ -518,45 +518,42 @@ templates/
     - [ ] 阅读流程顺畅
     - [ ] 重点突出明显
     - [ ] 易于理解记忆
-
 ```
 
 #### 图表审核流程
 
 
-
 <div class="chart-container">
+
 ```mermaid
+flowchart TD
 flowchart TD
     A[图表制作完成] --> B[自检质量清单]
     B --> C{是否通过自检?}
-    
     C -->|否| D[修改完善]
     D --> B
-    
     C -->|是| E[提交同行评审]
     E --> F[同行审核反馈]
     F --> G{是否需要修改?}
-    
     G -->|是| H[根据反馈修改]
     H --> E
-    
     G -->|否| I[专家最终审核]
     I --> J{专家审核通过?}
-    
     J -->|否| K[专家指导修改]
     K --> I
-    
     J -->|是| L[图表发布使用]
     L --> M[使用效果跟踪]
     M --> N[持续优化改进]
-    
     style A fill:#e1f5fe
     style C fill:#fff3e0
     style G fill:#fff3e0
     style J fill:#fff3e0
     style L fill:#e8f5e8
-
+%% Standard styling
+classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
+classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
+classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
 ## 版本控制和更新流程
@@ -569,6 +566,7 @@ flowchart TD
 
 
 ```yaml
+版本号格式:
 版本号格式:
   格式: "v主版本.次版本.修订版本"
   示例: "v1.2.3"
@@ -583,13 +581,13 @@ flowchart TD
     - 测试版: v1.2.3-beta
     - 候选版: v1.2.3-rc
     - 正式版: v1.2.3
-
 ```
 
 #### 变更记录格式
 
 
 ```markdown
+# 图表变更记录
 # 图表变更记录
 
 
@@ -615,7 +613,6 @@ flowchart TD
 
 - 移除了过时的工具信息
 - 删除了重复的图表内容
-
 ```
 
 ### 图表更新流程
@@ -625,6 +622,7 @@ flowchart TD
 
 
 ```yaml
+更新频率规划:
 更新频率规划:
   数据类图表:
     - 工具对比表: 季度更新
@@ -641,15 +639,15 @@ flowchart TD
     - 工具功能显著更新
     - 用户反馈指出问题
     - 定期审核发现过时内容
-
 ```
 
 #### 更新工作流程
 
 
-
 <div class="chart-container">
+
 ```mermaid
+sequenceDiagram
 sequenceDiagram
     participant M as 维护者
     participant R as 审核者
@@ -675,7 +673,6 @@ sequenceDiagram
     U->>S: 查看更新内容
     U->>M: 提供使用反馈
     M->>S: 记录反馈信息
-
 ```
 
 ## 图表使用指南
@@ -703,6 +700,7 @@ sequenceDiagram
 
 ```yaml
 维护任务清单:
+维护任务清单:
   每日任务:
     - [ ] 检查图表显示是否正常
     - [ ] 处理用户反馈的问题
@@ -722,13 +720,13 @@ sequenceDiagram
     - [ ] 全面审核图表内容
     - [ ] 更新过时的数据信息
     - [ ] 优化图表设计规范
-
 ```
 
 #### 问题处理流程
 
 
 ```yaml
+问题分类和处理:
 问题分类和处理:
   显示问题:
     - 症状: 图表无法正常显示
@@ -749,7 +747,6 @@ sequenceDiagram
     - 症状: 加载缓慢，影响阅读体验
     - 处理: 优化图片大小，改进代码效率
     - 时限: 1个工作日内解决
-
 ```
 
 ---

@@ -95,9 +95,10 @@
   ]
 }
 ```##
-# A.2.2 项目配置
 
-#### .cursor/settings.json
+## A.2.2 项目配置
+
+## .cursor/settings.json
 
 ```json
 {
@@ -405,9 +406,10 @@ jobs:
             body: review
           });
 ```#
-# A.7 自动化配置脚本
 
-### A.7.1 一键环境配置脚本
+## A.7 自动化配置脚本
+
+## A.7.1 一键环境配置脚本
 
 #### setup-ai-ide.sh
 
@@ -714,6 +716,7 @@ echo "项目 $PROJECT_NAME 初始化完成！"
 **症状**: VS Code 中 Copilot 图标显示错误状态
 
 **解决方案**:
+
 1. 检查 GitHub 账户是否有 Copilot 订阅
 2. 重新登录 GitHub 账户
 3. 清除 VS Code 缓存
@@ -729,6 +732,7 @@ code --install-extension GitHub.copilot
 **症状**: Cursor 无法连接到 AI 服务
 
 **解决方案**:
+
 1. 检查网络连接
 2. 验证 API 密钥
 3. 检查防火墙设置
@@ -744,6 +748,7 @@ curl -I https://api.anthropic.com/v1/messages
 **症状**: 修改配置后没有变化
 
 **解决方案**:
+
 1. 检查配置文件路径
 2. 验证 JSON 格式
 3. 重启 IDE

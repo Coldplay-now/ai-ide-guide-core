@@ -25,8 +25,7 @@
 ### 提交消息格式
 
 
-```
-
+```typescript
 <类型>(<范围>): <描述>
 
 <详细说明>
@@ -49,7 +48,7 @@
 ### 示例
 
 
-```
+```markdown
 
 feat(tool-comparison): 添加主流AI IDE工具对比表格
 
@@ -58,7 +57,6 @@ feat(tool-comparison): 添加主流AI IDE工具对比表格
 - 添加选型决策树和推荐建议
 
 Closes #123
-
 ```
 
 ## 协作流程
@@ -70,29 +68,30 @@ Closes #123
 ```bash
 git checkout develop
 git pull origin develop
+git checkout develop
+git pull origin develop
 git checkout -b feature/chapter-name
-
-```
 
 ### 2. 开发和提交
 
 
 ```bash
-# 添加文件
+
+## 添加文件
+
+## 添加文件 2
 
 git add .
 
-# 提交更改
+## 提交更改
 
 git commit -m "feat(chapter-name): 描述更改内容"
 
-# 推送到远程
+## 推送到远程
 
 git push origin feature/chapter-name
 
-```
-
-### 3. 创建Pull Request
+## 3. 创建Pull Request
 
 
 1. 在GitHub/GitLab上创建Pull Request
@@ -113,6 +112,8 @@ git push origin feature/chapter-name
 ```bash
 # 合并后删除本地分支
 
+# 合并后删除本地分支
+
 git checkout develop
 git pull origin develop
 git branch -d feature/chapter-name
@@ -120,8 +121,6 @@ git branch -d feature/chapter-name
 # 删除远程分支
 
 git push origin --delete feature/chapter-name
-
-```
 
 ## 版本发布流程
 
@@ -132,9 +131,9 @@ git push origin --delete feature/chapter-name
 ```bash
 git checkout develop
 git pull origin develop
+git checkout develop
+git pull origin develop
 git checkout -b release/v2.1
-
-```
 
 ### 2. 准备发布
 
@@ -149,6 +148,8 @@ git checkout -b release/v2.1
 ```bash
 # 合并到main分支
 
+# 合并到main分支
+
 git checkout main
 git merge release/v2.1
 git tag v2.1
@@ -159,8 +160,6 @@ git push origin main --tags
 git checkout develop
 git merge release/v2.1
 git push origin develop
-
-```
 
 ## 文件命名规范
 
@@ -206,11 +205,11 @@ git push origin develop
 ```bash
 git checkout feature/your-branch
 git fetch origin
+git checkout feature/your-branch
+git fetch origin
 git merge origin/develop
 
-# 解决冲突
+## 解决冲突
 
 git add .
 git commit -m "resolve: 解决与develop分支的冲突"
-
-```
