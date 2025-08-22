@@ -13,7 +13,7 @@ AI IDE的核心技术基于大语言模型(Large Language Model, LLM)，这些�
 <div class="chart-container">
 
 ```mermaid
-graph LR
+graph TB
     A[输入代码上下文] --> B[Token化处理]
     B --> C[Transformer编码器]
     C --> D[多头注意力机制]
@@ -36,7 +36,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-#### 2.1.1.1 关键技术组件
+**关键技术组件**
 
 
 **1. 代码理解模块**
@@ -72,7 +72,7 @@ AI IDE的智能补全技术经历了从规则驱动到AI驱动的重要演进：
 | 3.0 深度学习   | 2020-2022 | 基于神经网络的序列预测   | GitHub Copilot        | 80-85% |
 | 4.0 大模型时代 | 2023-现在 | 基于大语言模型的智能生成 | Cursor, Claude Code   | 85-90% |
 
-#### 2.1.2.1 核心算法原理
+**核心算法原理**
 
 
 **上下文编码算法**
@@ -149,7 +149,7 @@ def generate_code_candidates(context_vector, model, num_candidates=5):
 <div class="chart-container">
 
 ```mermaid
-graph LR
+graph TB
     A[自然语言输入] --> B[意图理解]
     B --> C[任务分解]
     C --> D[代码框架生成]
@@ -173,7 +173,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-#### 2.1.3.1 生成策略分类
+**生成策略分类**
 
 
 **1. 模板驱动生成**
@@ -241,7 +241,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 2.2.2 核心产品对比分析
 
 
-#### 2.2.2.1 GitHub Copilot - 市场领导者
+**GitHub Copilot - 市场领导者**
 
 
 **技术架构**
@@ -278,7 +278,7 @@ def calculate_fibonacci(n):
 - 需要广泛语言支持的项目
 - 与GitHub工作流深度集成的团队
 
-#### 2.2.2.2 Cursor - 新兴挑战者
+**Cursor - 新兴挑战者**
 
 
 **技术架构**
@@ -320,7 +320,7 @@ async function createUser(userData: User): Promise<User> {
 - 需要快速响应的实时协作
 - 对AI模型有定制需求的企业
 
-#### 2.2.2.3 Claude Code - 安全专家
+**Claude Code - 安全专家**
 
 
 **技术架构**
@@ -378,7 +378,7 @@ def process_user_input(user_input):
 ### 2.3.1 短期趋势 (2024-2025)
 
 
-#### 2.3.1.1 模型能力增强方向
+**模型能力增强方向**
 
 
 **1. 参数规模扩展**
@@ -429,7 +429,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 - 个性化适应: 学习个人和团队的编程风格
 - 上下文记忆: 长期对话和项目上下文维护
 
-#### 2.3.1.2 用户体验优化
+**2.3.1.2 用户体验优化**
 
 
 **1. 响应速度提升**
@@ -465,7 +465,7 @@ def natural_language_programming():
 ### 2.3.2 中期趋势 (2025-2027)
 
 
-#### 2.3.2.1 全栈开发助手
+**全栈开发助手**
 
 
 **1. 端到端开发支持**
@@ -474,7 +474,7 @@ def natural_language_programming():
 <div class="chart-container">
 
 ```mermaid
-graph LR
+graph TB
     A[需求分析] --> B[架构设计]
     B --> C[代码实现]
     C --> D[测试生成]
@@ -510,7 +510,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 - 自动化文档生成
 - 团队知识管理
 
-#### 2.3.2.2 跨语言和跨平台能力
+**跨语言和跨平台能力**
 
 
 **1. 语言转换和迁移**
@@ -550,7 +550,7 @@ public class Fibonacci {
 ### 2.3.3 长期趋势 (2027-2030)
 
 
-#### 2.3.3.1 通用人工智能应用
+**通用人工智能应用**
 
 
 **1. 自主编程能力**
@@ -567,7 +567,7 @@ public class Fibonacci {
 - 新算法发现
 - 优化策略创新
 
-#### 2.3.3.2 新兴技术集成
+**新兴技术集成**
 
 
 **1. 量子计算支持**
@@ -602,35 +602,35 @@ def quantum_algorithm_generation():
 ### 2.4.1 按开发阶段分类
 
 
-#### 2.4.1.1 需求分析阶段
+**需求分析阶段**
 
 - **自然语言需求解析**: 将业务需求转换为技术规格
 - **用例图自动生成**: 基于需求描述生成UML用例图
 - **API接口设计**: 根据功能需求设计RESTful API
 - **数据模型设计**: 自动生成数据库表结构和关系
 
-#### 2.4.1.2 设计阶段
+**】设计阶段**
 
 - **架构模式推荐**: 基于项目特征推荐合适的架构模式
 - **设计模式应用**: 自动识别和应用设计模式
 - **组件依赖分析**: 分析和优化组件间依赖关系
 - **性能预测评估**: 预测系统性能瓶颈和优化点
 
-#### 2.4.1.3 实现阶段
+**实现阶段**
 
 - **代码自动生成**: 根据设计文档生成代码框架
 - **算法实现优化**: 提供高效算法实现建议
 - **代码重构建议**: 识别代码异味并提供重构方案
 - **单元测试生成**: 自动生成测试用例和测试代码
 
-#### 2.4.1.4 测试阶段
+**测试阶段**
 
 - **测试用例设计**: 基于代码逻辑生成测试用例
 - **边界条件识别**: 自动识别需要测试的边界条件
 - **性能测试脚本**: 生成性能测试和压力测试脚本
 - **缺陷预测分析**: 预测潜在的缺陷和风险点
 
-#### 2.4.1.5 部署运维阶段
+**部署运维阶段**
 
 - **部署脚本生成**: 自动生成CI/CD配置和部署脚本
 - **监控配置**: 生成系统监控和日志配置
@@ -640,7 +640,7 @@ def quantum_algorithm_generation():
 ### 2.4.2 按项目规模分类
 
 
-#### 2.4.2.1 个人项目 (1人)
+**个人项目 (1人)**
 
 **特点**: 快速原型开发，学习新技术
 **AI IDE应用**:
@@ -665,7 +665,7 @@ def quantum_algorithm_generation():
 
 ```
 
-#### 2.4.2.2 小团队项目 (2-10人)
+**小团队项目 (2-10人)**
 
 **特点**: 敏捷开发，快速迭代
 **AI IDE应用**:
@@ -690,7 +690,7 @@ def quantum_algorithm_generation():
 
 ```
 
-#### 2.4.2.3 中型项目 (10-50人)
+**中型项目 (10-50人)**
 
 **特点**: 规范化开发，质量控制
 **AI IDE应用**:
@@ -716,7 +716,7 @@ def quantum_algorithm_generation():
 
 ```
 
-#### 2.4.2.4 大型项目 (50+人)
+**大型项目 (50+人)**
 
 **特点**: 企业级开发，严格治理
 **AI IDE应用**:
@@ -745,7 +745,7 @@ def quantum_algorithm_generation():
 ### 2.4.3 按技术领域分类
 
 
-#### 2.4.3.1 Web开发
+**Web开发**
 
 **前端开发**
 
@@ -761,7 +761,7 @@ def quantum_algorithm_generation():
 - 微服务架构实现
 - 中间件开发
 
-#### 2.4.3.2 移动开发
+**移动开发**
 
 **原生开发**
 
@@ -770,7 +770,7 @@ def quantum_algorithm_generation():
 - 跨平台框架(React Native, Flutter)
 - 移动端性能优化
 
-#### 2.4.3.3 数据科学
+**数据科学**
 
 **机器学习**
 
@@ -786,7 +786,7 @@ def quantum_algorithm_generation():
 - 报表生成程序
 - ETL流程实现
 
-#### 2.4.3.4 系统编程
+**系统编程**
 
 **操作系统开发**
 
@@ -805,7 +805,7 @@ def quantum_algorithm_generation():
 ### 2.4.4 应用场景选择指南
 
 
-#### 2.4.4.1 评估框架
+**评估框架**
 
 
 **1. 技术复杂度评估**
@@ -862,7 +862,7 @@ def calculate_ai_ide_suitability(project, complexity_score):
 
 ```
 
-#### 2.4.4.2 决策矩阵
+**决策矩阵**
 
 
 | 项目特征       | 高适用性     | 中适用性     | 低适用性     |

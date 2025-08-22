@@ -4,7 +4,7 @@
 
 ### A.1.1 VS Code 配置
 
-#### 基础配置文件 (settings.json)
+**基础配置文件 (settings.json)**
 
 ```json
 {
@@ -26,7 +26,7 @@
 }
 ```
 
-#### 工作区配置 (.vscode/settings.json)
+**工作区配置 (.vscode/settings.json)**
 
 ```json
 {
@@ -47,7 +47,7 @@
 
 ### A.1.2 JetBrains IDEs 配置
 
-#### IntelliJ IDEA / PyCharm / WebStorm 配置
+**IntelliJ IDEA / PyCharm / WebStorm 配置**
 
 ```xml
 <!-- .idea/copilot.xml -->
@@ -73,7 +73,7 @@
 
 ### A.2.1 基础配置
 
-#### 用户配置文件 (cursor-settings.json)
+**用户配置文件 (cursor-settings.json)**
 
 ```json
 {
@@ -128,7 +128,7 @@
 
 ### A.3.1 API 配置
 
-#### 环境变量配置 (.env)
+**环境变量配置 (.env)**
 
 ```bash
 # Claude API Configuration
@@ -173,7 +173,7 @@ PROJECT_FRAMEWORK=react
 
 ### A.4.1 基础配置
 
-#### windsurf.config.json
+**windsurf.config.json**
 
 ```json
 {
@@ -219,14 +219,14 @@ PROJECT_FRAMEWORK=react
 
 ### A.5.1 通用环境准备
 
-#### 系统要求
+**系统要求**
 
 - **操作系统**: Windows 10+, macOS 10.15+, Linux (Ubuntu 18.04+)
 - **内存**: 最低 8GB RAM，推荐 16GB+
 - **存储**: 至少 10GB 可用空间
 - **网络**: 稳定的互联网连接
 
-#### 必需软件
+**必需软件**
 
 ```bash
 # Node.js 和 npm
@@ -246,7 +246,7 @@ sh get-docker.sh
 
 ### A.5.2 VS Code + GitHub Copilot 环境搭建
 
-#### 步骤1: 安装 VS Code
+**步骤1: 安装 VS Code**
 
 ```bash
 # Ubuntu/Debian
@@ -263,7 +263,7 @@ brew install --cask visual-studio-code
 # 从官网下载安装包
 ```
 
-#### 步骤2: 安装 GitHub Copilot 扩展
+**步骤2: 安装 GitHub Copilot 扩展**
 
 ```bash
 # 通过命令行安装
@@ -271,7 +271,7 @@ code --install-extension GitHub.copilot
 code --install-extension GitHub.copilot-chat
 ```
 
-#### 步骤3: 配置认证
+**步骤3: 配置认证**
 
 1. 在 VS Code 中按 `Ctrl+Shift+P` (Windows/Linux) 或 `Cmd+Shift+P` (macOS)
 2. 输入 "GitHub Copilot: Sign In"
@@ -279,7 +279,7 @@ code --install-extension GitHub.copilot-chat
 
 ### A.5.3 Cursor 环境搭建
 
-#### 步骤1: 下载安装 Cursor
+**步骤1: 下载安装 Cursor**
 
 ```bash
 # macOS
@@ -294,7 +294,7 @@ chmod +x cursor-*.AppImage
 ./cursor-*.AppImage
 ```
 
-#### 步骤2: 初始配置
+**步骤2: 初始配置**
 
 1. 启动 Cursor
 2. 选择 AI 模型 (GPT-4, Claude, 等)
@@ -305,7 +305,7 @@ chmod +x cursor-*.AppImage
 
 ### A.6.1 Git 集成配置
 
-#### .gitignore 模板
+**.gitignore 模板**
 
 ```gitignore
 # AI IDE 相关文件
@@ -334,7 +334,7 @@ build/
 target/
 ```
 
-#### Git Hooks 配置
+**Git Hooks 配置**
 
 ```bash
 #!/bin/sh
@@ -362,7 +362,7 @@ echo "All checks passed!"
 
 ### A.6.2 CI/CD 集成配置
 
-#### GitHub Actions 配置 (.github/workflows/ai-code-review.yml)
+**GitHub Actions 配置 (.github/workflows/ai-code-review.yml)**
 
 ```yaml
 name: AI Code Review
@@ -411,7 +411,7 @@ jobs:
 
 ## A.7.1 一键环境配置脚本
 
-#### setup-ai-ide.sh
+**setup-ai-ide.sh**
 
 ```bash
 #!/bin/bash
@@ -610,7 +610,7 @@ main "$@"
 
 ### A.7.2 项目初始化脚本
 
-#### init-ai-project.sh
+**init-ai-project.sh**
 
 ```bash
 #!/bin/bash
@@ -711,7 +711,7 @@ echo "项目 $PROJECT_NAME 初始化完成！"
 
 ### A.8.1 常见问题及解决方案
 
-#### 问题1: GitHub Copilot 无法激活
+**问题1: GitHub Copilot 无法激活**
 
 **症状**: VS Code 中 Copilot 图标显示错误状态
 
@@ -727,7 +727,7 @@ rm -rf ~/.vscode/extensions/github.copilot-*
 code --install-extension GitHub.copilot
 ```
 
-#### 问题2: Cursor 连接超时
+**问题2: Cursor 连接超时**
 
 **症状**: Cursor 无法连接到 AI 服务
 
@@ -743,7 +743,7 @@ curl -I https://api.openai.com/v1/models
 curl -I https://api.anthropic.com/v1/messages
 ```
 
-#### 问题3: 配置文件不生效
+**问题3: 配置文件不生效**
 
 **症状**: 修改配置后没有变化
 
@@ -760,7 +760,7 @@ python -m json.tool settings.json
 
 ### A.8.2 性能优化建议
 
-#### 内存使用优化
+**内存使用优化**
 
 ```json
 {
@@ -774,7 +774,7 @@ python -m json.tool settings.json
 }
 ```
 
-#### 网络优化
+**网络优化**
 
 ```json
 {
@@ -786,7 +786,7 @@ python -m json.tool settings.json
 
 ### A.8.3 日志和调试
 
-#### 启用详细日志
+**启用详细日志**
 
 ```json
 {
@@ -797,7 +797,7 @@ python -m json.tool settings.json
 }
 ```
 
-#### 查看日志文件
+**查看日志文件**
 
 ```bash
 # VS Code 日志
@@ -811,7 +811,7 @@ tail -f ~/.cursor/logs/main.log
 
 ### A.9.1 企业安全配置
 
-#### 企业级 settings.json
+**企业级 settings.json**
 
 ```json
 {
@@ -839,7 +839,7 @@ tail -f ~/.cursor/logs/main.log
 
 ### A.9.2 团队协作配置
 
-#### 团队共享配置 (.vscode/settings.json)
+**团队共享配置 (.vscode/settings.json)**
 
 ```json
 {

@@ -46,7 +46,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 4.1.2 详细成本计算模型
 
 
-#### 4.1.2.1 直接成本计算
+**4.1.2.1 直接成本计算**
 
 
 **1. 工具许可费用**
@@ -164,7 +164,7 @@ def calculate_training_implementation_cost(team_size, complexity_level):
     }
 ```
 
-#### 4.1.2.2 间接成本计算
+**4.1.2.2 间接成本计算**
 
 
 **1. 学习曲线成本**
@@ -233,7 +233,7 @@ def calculate_management_overhead(team_size, project_duration_months):
 ### 4.1.3 成本分析实例
 
 
-#### 4.1.3.1 小团队成本分析 (5人团队)
+**4.1.3.1 小团队成本分析 (5人团队)**
 
 
 ```python
@@ -355,7 +355,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 4.2.2 量化效益计算方法
 
 
-#### 4.2.2.1 开发效率提升效益
+**4.2.2.1 开发效率提升效益**
 
 
 **1. 编码速度提升**
@@ -422,7 +422,7 @@ def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate,
     }
 ```
 
-#### 4.2.2.2 代码质量改善效益
+**4.2.2.2 代码质量改善效益**
 
 
 **1. 缺陷减少效益**
@@ -484,7 +484,7 @@ def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_r
 ### 4.2.3 效益评估实例
 
 
-#### 4.2.3.1 中型团队效益分析 (15人团队)
+**4.2.3.1 中型团队效益分析 (15人团队)**
 
 
 ```python
@@ -566,7 +566,7 @@ print(f"月均效益: ¥{medium_team_benefit['monthly_benefit']:,.0f}")
 ### 4.3.1 ROI计算公式
 
 
-#### 4.3.1.1 基础ROI公式
+**4.3.1.1 基础ROI公式**
 
 
 ```python
@@ -587,7 +587,7 @@ def calculate_basic_roi(total_benefits, total_costs):
     }
 ```
 
-#### 4.3.1.2 时间价值调整的ROI (NPV方法)
+**4.3.1.2 时间价值调整的ROI (NPV方法)**
 
 
 ```python
@@ -617,7 +617,7 @@ def calculate_npv_roi(cash_flows, discount_rate, initial_investment):
     }
 ```
 
-#### 4.3.1.3 投资回收期计算
+**4.3.1.3 投资回收期计算**
 
 
 ```python
@@ -761,7 +761,7 @@ class ComprehensiveROIAnalyzer:
 ### 4.3.3 ROI计算实例
 
 
-#### 4.3.3.1 完整ROI分析示例
+**4.3.3.1 完整ROI分析示例**
 
 
 ```python
@@ -845,7 +845,7 @@ roi_result = complete_roi_example()
 ### 4.4.1 风险识别和量化
 
 
-#### 4.4.1.1 风险分类框架
+**4.4.1.1 风险分类框架**
 
 
 <div class="chart-container">
@@ -879,7 +879,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-#### 4.4.1.2 风险量化模型
+**4.4.1.2 风险量化模型**
 
 
 ```python

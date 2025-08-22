@@ -7,7 +7,7 @@
 ### 8.1.1 AI辅助代码生成操作步骤
 
 
-#### 8.1.1.1 步骤1：上下文建立和需求描述
+**8.1.1.1 步骤1：上下文建立和需求描述**
 
 ```java
 提示词模板：
@@ -26,10 +26,9 @@
 
 ```
 
-#### 8.1.1.2 步骤2：增量代码生成
+**8.1.1.2 步骤2：增量代码生成**
 
 ```java
-
 提示词模板：
 "基于现有代码：
 [现有代码片段]
@@ -44,12 +43,12 @@
 6. 遵循SOLID原则
 7. 添加适当的错误处理
 8. 包含必要的注释"
+8. 包含必要的注释"
 ```
 
-#### 8.1.1.3 步骤3：代码优化和重构
+**8.1.1.3 步骤3：代码优化和重构**
 
 ```java
-
 提示词模板：
 提示词模板：
 "请对以下代码进行重构优化：
@@ -93,6 +92,7 @@
 *AI输出：**
 
 ```java
+// 用户实体类
 // 用户实体类
 @Entity
 @Table(name = "users")
@@ -203,7 +203,6 @@ public interface UserService {
 
     void logout(String token);
 }
-
 ```java
 
 输入提示词：
@@ -442,9 +441,8 @@ public class UserServiceImpl implements UserService {
 }
 
 ```java
-
 **第三步：单元测试生成**
-
+**第三步：单元测试生成**
 ```
 
 **第三步：单元测试生成**
@@ -452,6 +450,8 @@ public class UserServiceImpl implements UserService {
 AI输出：
 
 ```java
+@ExtendWith(MockitoExtension.class)
+class UserServiceImplTest {
 @ExtendWith(MockitoExtension.class)
 class UserServiceImplTest {
     
@@ -645,7 +645,6 @@ class UserServiceImplTest {
 
 **原始代码：**
 
-```java
 public class OrderProcessor {
     
     public void processOrder(Order order) {
@@ -885,6 +884,7 @@ public class InventoryManager {
 ```java
 
 **重构效果分析：**
+**重构效果分析：**
 
 | 重构维度 | 重构前 | 重构后 | 改进效果 |
 | --------- | -------- | -------- | ---------- |
@@ -907,25 +907,25 @@ public class InventoryManager {
 ### 8.2.1 AI辅助代码审查操作步骤
 
 
-#### 8.3.1.1 步骤1：代码质量检查
+**8.3.1.1 步骤1：代码质量检查**
+
 检查维度：
-22. 代码规范性（命名、格式、注释）
-23. 设计原则遵循情况（SOLID原则）
-24. 潜在的bug和安全问题
-25. 性能优化建议
-26. 可维护性评估
+1. 代码规范性（命名、格式、注释）
+2. 设计原则遵循情况（SOLID原则）
+3. 潜在的bug和安全问题
+4. 性能优化建议
+5. 可维护性评估
 
 请提供：
-27. 问题清单（按严重程度分类）
-28. 具体的修改建议
-29. 重构方案（如需要）"
+1. 问题清单（按严重程度分类）
+2. 具体的修改建议
+3. 重构方案（如需要）"
+
+**8.3.1.2 步骤2：安全漏洞检测**
 
 ```java
-
-#### 8.3.1.2 步骤2：安全漏洞检测
-
-```
-
+提示词模板：
+"请检查以下代码的安全问题：
 提示词模板：
 "请检查以下代码的安全问题：
 [代码片段]
@@ -940,31 +940,30 @@ public class InventoryManager {
 35. 安全风险评估
 36. 漏洞修复建议
 37. 安全最佳实践建议"
-
-```java
-
 #### 8.3.1.3 步骤3：性能分析
 
-```
+```java
 
 提示词模板：
 "请分析以下代码的性能问题：
 [代码片段]
+提示词模板：
+"请分析以下代码的性能问题：
+[代码片段]
 
-#### 8.3.1.3 步骤3：性能分析
-39. 数据库查询效率
-40. 内存使用情况
-41. 并发安全性
-42. 缓存使用策略
+
+**8.3.1.3 步骤3：性能分析**
+
+1. 数据库查询效率
+2. 内存使用情况
+3. 并发安全性
+
+4. 缓存使用策略
 
 请提供：
-43. 性能瓶颈分析
-44. 优化建议
-45. 预期性能提升效果"
-
-```jsx
-
-### 8.2.2 代码审查标准和流程模板
+1. 性能瓶颈分析
+2. 优化建议
+3. 预期性能提升效果"
 
 
 **代码审查检查清单：**
@@ -1018,11 +1017,9 @@ public class InventoryManager {
 ```java
 
 **代码审查报告模板：**
-
 ```markdown
 
-## 第8章 代码审查报告
-
+**代码审查报告模板：**
 
 ## 8.4 基本信息
 
@@ -1050,21 +1047,21 @@ public class InventoryManager {
 ### 8.6.2 问题清单
 
 
-#### 8.6.2.1 严重问题（必须修复）
+**8.6.2.1 严重问题（必须修复）**
 
 | 问题ID | 文件位置 | 问题描述 | 修改建议 |
 | -------- | ---------- | ---------- | ---------- |
 | S001 | UserService.java:45 | [问题描述] | [修改建议] |
 | S002 | OrderController.java:23 | [问题描述] | [修改建议] |
 
-#### 8.6.2.2 一般问题（建议修复）
+**8.6.2.2 一般问题（建议修复）**
 
 | 问题ID | 文件位置 | 问题描述 | 修改建议 |
 | -------- | ---------- | ---------- | ---------- |
 | M001 | UserService.java:67 | [问题描述] | [修改建议] |
 | M002 | OrderService.java:89 | [问题描述] | [修改建议] |
 
-#### 8.6.2.3 建议改进（可选修复）
+**8.6.2.3 建议改进（可选修复）**
 
 | 问题ID | 文件位置 | 问题描述 | 修改建议 |
 | -------- | ---------- | ---------- | ---------- |
@@ -1113,6 +1110,7 @@ public class InventoryManager {
 
 <div class="chart-container">
 ```mermaid
+
 gitgraph
     commit id: "Initial"
     branch develop
@@ -1136,6 +1134,7 @@ gitgraph
     checkout develop
     merge release/v1.0
     commit id: "Sync release"
+
 ```java
 **Git配置模板：**
 ```bash
@@ -1186,16 +1185,18 @@ gitgraph
     tool = vscode
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
+
 ```java
 **提交信息模板：**
 
-```bash
+**提交信息模板：**
 
 ## 第8章 .gitmessage 模板
 
-## 第8章 <type>(<scope>): <subject>
+**提交信息模板：**
 
 ## 第8章 <body>
+
 
 **提交信息模板：**
 # 第8章 <footer>
@@ -1254,6 +1255,7 @@ gitgraph
 变更文件：
 [文件列表]
 
+
 变更内容：
 [变更描述]
 **AI辅助提交信息生成：**
@@ -1273,6 +1275,12 @@ feat(auth): add JWT token refresh mechanism
 Closes #156
 
 ```java
+
+### 8.3.2 版本控制最佳实践
+### 8.3.2 版本控制最佳实践
+
+
+**分支管理策略：**
 
 ### 8.3.2 版本控制最佳实践
 
@@ -1317,11 +1325,11 @@ git merge --no-ff release/v1.0
 git push origin develop
 git branch -d release/v1.0
 
-```java
+# 第8章 1. 更新本地分支
 
-**冲突解决流程：**
-
-```bash
+git fetch origin
+git checkout feature/my-feature
+git rebase origin/develop
 
 # 第8章 1. 更新本地分支
 
@@ -1344,21 +1352,21 @@ git diff origin/develop
 
 git push --force-with-lease origin feature/my-feature
 
-```java
-
-### 8.3.3 CI/CD集成配置
-
-
-**GitHub Actions配置：**
-
-```yaml
-
 # 第8章 .github/workflows/ci.yml
 
 name: CI/CD Pipeline
 
 on:
+
   push:
+    branches: [ main, develop ]
+# 第8章 .github/workflows/ci.yml 2
+
+name: CI/CD Pipeline
+
+on:
+  push:
+
     branches: [ main, develop ]
   pull_request:
 ### 8.3.3 CI/CD集成配置
@@ -1367,6 +1375,7 @@ on:
 **GitHub Actions配置：**
     
     services:
+
       mysql:
         image: mysql:8.0
         env:
@@ -1375,10 +1384,12 @@ on:
         ports:
           - 3306:3306
 
+
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
       
       redis:
         image: redis:6.2
+
         ports:
           - 6379:6379
 
@@ -1458,17 +1469,22 @@ run: |
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     
+
     steps:
     - name: Deploy to staging
 
+
       run: |
         # 部署到测试环境的脚本
+
         echo "Deploying to staging environment"
     
     - name: Run integration tests
 
+
       run: |
         # 运行集成测试的脚本
+
         echo "Running integration tests"
     
     - name: Deploy to production
@@ -1478,11 +1494,11 @@ run: |
         # 部署到生产环境的脚本
         echo "Deploying to production environment"
 
-```java
+name: Code Quality
 
-**代码质量检查配置：**
-
-```yaml
+on:
+  pull_request:
+    branches: [ main, develop ]
 
 # 第8章 .github/workflows/code-quality.yml
 
@@ -1536,19 +1552,11 @@ jobs:
             repo: context.repo.repo,
             body: '❌ 代码质量检查失败，请查看详细报告并修复问题。'
           })
-
-```jsx
-
-## 8.4 团队协作最佳实践
-
-
-### 8.4.1 开发流程规范
-
-
 **敏捷开发流程：**
 
 
 <div class="chart-container">
+
 ```mermaid
 graph TD
     A[Sprint计划] --> B[任务分解]
@@ -1562,10 +1570,13 @@ graph TD
     M --> N{验收通过?}
     N -->|否| O[需求澄清]
     O --> D
+
     N -->|是| P[Sprint回顾]
     P --> Q[发布计划]
 ```java
+
 **任务管理模板：**
+
 ```markdown
 # 第8章 用户故事卡片模板
 ## 8.11 基本信息
@@ -1602,13 +1613,17 @@ graph TD
 ## 8.17 风险和问题
 - 第三方认证服务可能不稳定
 - 密码加密算法需要安全评估
+
 ## 8.18 备注
 - 需要支持记住登录状态功能
+
 - 考虑添加验证码防止暴力破解
 ```java
+
 ### 8.4.2 沟通协作工具配置
 
 **Slack集成配置：**
+
 ```yaml
 # 第8章 .github/workflows/slack-notification.yml
 name: Slack Notifications
@@ -1647,11 +1662,13 @@ on:
           ❌ 部署失败！
           分支: ${{ github.ref }}
           提交: ${{ github.sha }}
+
           作者: ${{ github.actor }}
           请检查构建日志: ${{ github.event.workflow_run...}}
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 ```java
+
 **团队协作规范：**
 | 协作场景 | 工具选择 | 使用规范 | 响应时间 |
 | --------- | --------- | --------- | ---------- |
@@ -1659,11 +1676,13 @@ on:
 | **代码审查** | GitHub/GitLab | 详细的审查意见，建设性反馈 | 24小时内 |
 | **问题跟踪** | Jira/GitHub Issues | 清晰的问题描述，及时状态更新 | 4小时内 |
 | **文档协作** | Confluence/Notion | 版本控制，定期更新 | 48小时内 |
+
 | **会议安排** | 日历系统 | 提前通知，准备议程 | 提前24小时 |
 | **紧急问题** | 电话/即时消息 | 立即响应，升级机制 | 30分钟内 |
 ### 8.4.3 知识管理和文档规范
 
 **技术文档模板：**
+
 ```markdown
 # 第8章 [功能模块]技术文档
 **团队协作规范：**
@@ -1687,12 +1706,14 @@ on:
 ## 8.22 API文档
 ### 8.22.1 接口列表
 | 接口名称 | 方法 | 路径 | 描述 |
+
 | --------- | ------ | ------ | ------ |
 | [接口1] | POST | /api/v1/users | [描述] |
 | [接口2] | GET | /api/v1/users/{id} | [描述] |
 ### 8.22.2 接口详情
 #### 8.22.2.1 创建用户
 ```http
+
 POST /api/v1/users
 Content-Type: application/json
 {
@@ -1704,12 +1725,40 @@ Content-Type: application/json
 classDef default fill:#e1f5fe,stroke:#333,stroke-width:2px
 classDef highlight fill:#bbdefb,stroke:#333,stroke-width:3px
 classDef process fill:#90caf9,stroke:#333,stroke-width:2px
+
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
-```
+
+```java
 
 **响应示例：**
 
-```json
+**响应示例：**
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "id": 1,
+    "username": "testuser",
+**响应示例：**
+Content-Type: application/json
+
+{
+  "username": "string",
+  "email": "string",
+
+  "password": "string"
+}
+### 8.23.1 表结构
+
+
+```sql
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+{
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
 {
   "code": 200,
   "message": "success",
@@ -1717,18 +1766,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
     "id": 1,
     "username": "testuser",
     "email": "test@example.com",
-POST /api/v1/users
-Content-Type: application/json
-
-{
-  "username": "string",
-  "email": "string",
-  "password": "string"
-}
-### 8.23.1 表结构
-
-
-```sql
+    "createdTime": "2024-01-15T10:30:00Z"
 CREATE TABLE users (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -1761,17 +1799,6 @@ CREATE TABLE users (
   redis:
     host: ${REDIS_HOST}
     port: ${REDIS_PORT}
-
-```
-
-### 8.24.3 部署步骤
-
-1. 构建应用：`mvn clean package`
-2. 构建镜像：`docker build -t myapp .`
-3. 启动服务：`docker-compose up -d`
-
-## 8.25 监控和运维
-
 # 第8章 application.yml
 
 spring:
@@ -1795,11 +1822,18 @@ spring:
     </root>
 </configuration>
 
-```
-
-## 8.26 常见问题
-
 ### 8.26.1 Q1: 如何处理数据库连接超时？
+
+A1: 检查数据库连接池配置，增加连接超时时间。
+<!-- logback-spring.xml -->
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+## 8.26 常见问题 2
+
+### 8.26.1 Q1: 如何处理数据库连接超时？ 2
 
 A1: 检查数据库连接池配置，增加连接超时时间。
 <!-- logback-spring.xml -->
@@ -1815,8 +1849,5 @@ A1: 检查数据库连接池配置，增加连接超时时间。
         <appender-ref ref="STDOUT"/>
     </root>
 </configuration>
-
-通过这些优化的开发管理实践，团队可以建立高效的开发流程，确保代码质量和项目成功交付。
-```
 
 通过这些优化的开发管理实践，团队可以建立高效的开发流程，确保代码质量和项目成功交付。

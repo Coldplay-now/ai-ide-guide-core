@@ -7,7 +7,7 @@
 ### 7.1.1 AI辅助架构设计操作步骤
 
 
-#### 7.1.1.1 步骤1：架构需求分析
+**7.1.1.1 步骤1：架构需求分析**
 
 ```yaml
 提示词模板：
@@ -27,10 +27,9 @@
 
 ```
 
-#### 7.1.1.2 步骤2：架构模式推荐
+**7.1.1.2 步骤2：架构模式推荐**
 
 ```yaml
-
 提示词模板：
 "为以下场景推荐合适的架构模式：
 业务场景：[具体业务描述]
@@ -43,12 +42,12 @@
 6. 设计原则应用
 7. 架构分层策略
 8. 组件交互方式"
+8. 组件交互方式"
 ```
 
-#### 7.1.1.3 步骤3：架构图生成
+**7.1.1.3 步骤3：架构图生成**
 
 ```yaml
-
 提示词模板：
 提示词模板：
 "生成系统架构图的Mermaid代码：
@@ -133,7 +132,6 @@ AI输出：
 **第二步：详细架构设计**
 
 ```jsx
-
 输入提示词：
 "为电商平台生成详细的微服务架构图，包括各个服务和基础设施组件"
 
@@ -243,12 +241,14 @@ AI输出：
     style PaymentService fill:#f3e5f5
     style CartService fill:#f3e5f5
     style NotificationService fill:#f3e5f5
-
+    style NotificationService fill:#f3e5f5
 ```yaml
 
 **第三步：架构决策记录**
 
-```
+```markdown
+**第三步：架构决策记录**
+
 **第三步：架构决策记录**
 
 标题：采用微服务架构
@@ -284,8 +284,6 @@ AI输出：
 - 建立完善的监控和日志体系
 - 采用容器化部署简化运维
 
-```yaml
-
 ### 7.1.3 架构评估与优化
 
 
@@ -315,7 +313,6 @@ AI输出：
 ### 7.2.1 AI辅助详细设计操作步骤
 
 
-
 #### 7.2.1.1 步骤1：类图和接口设计
 功能模块：[模块名称]
 主要实体：[实体列表]
@@ -331,13 +328,15 @@ AI输出：
 
 ```yaml
 
-#### 7.2.1.2 步骤2：设计模式应用
+**7.2.1.2 步骤2：设计模式应用**
 
-```
+
+**7.2.1.2 步骤2：设计模式应用**
 
 提示词模板：
 
-#### 7.2.1.2 步骤2：设计模式应用
+**7.2.1.2 步骤2：设计模式应用**
+
 约束条件：[技术和业务约束]
 
 质量要求：[可维护性、可扩展性等要求]
@@ -349,11 +348,9 @@ AI输出：
 4. 模式的优缺点分析"
 
 ```yaml
-
 #### 7.2.1.3 步骤3：数据库设计
 
-```
-
+#### 7.2.1.3 步骤3：数据库设计
 提示词模板：
 
 "设计数据库表结构：
@@ -373,11 +370,14 @@ AI输出：
 ### 7.2.2 实践案例：订单管理系统详细设计
 
 
+### 7.2.2 实践案例：订单管理系统详细设计 2
+
+
 **业务背景：** 设计电商平台的订单管理系统，包括订单创建、状态跟踪、支付处理等功能。
 
 **AI辅助详细设计过程：**
 
-### 7.2.2 实践案例：订单管理系统详细设计
+### 7.2.2 实践案例：订单管理系统详细设计 3
 
 
 **业务背景：** 设计电商平台的订单管理系统，包括订单创建、状态跟踪、支付处理等功能。
@@ -393,9 +393,6 @@ AI输出：
 请生成完整的类图设计和核心类代码"
 
 AI输出：
-
-```java
-// 订单实体类
 @Entity
 @Table(name = "orders")
 public class Order {
@@ -601,6 +598,10 @@ AI输出：
 "为订单状态管理推荐合适的设计模式，需要处理复杂的状态转换逻辑"
 
 AI输出：
+输入提示词：
+"为订单状态管理推荐合适的设计模式，需要处理复杂的状态转换逻辑"
+
+AI输出：
 推荐使用状态模式(State Pattern)来管理订单状态转换：
 // 抽象状态处理器
 public abstract class AbstractOrderStatusHandler implements OrderStatusHandler {
@@ -690,23 +691,25 @@ public class OrderStatusHandlerFactory {
     }
 
 }
+2. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
+3. **可维护性**：状态转换逻辑集中管理，便于维护和测试
+4. **可扩展性**：支持复杂的状态转换规则和业务逻辑
 
-```yaml
+**第三步：数据库设计**
+```sql
+
+**设计模式优势分析：**
+1. **单一职责**：每个状态处理器只负责特定状态的业务逻辑
+2. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
+3. **可维护性**：状态转换逻辑集中管理，便于维护和测试
+
+4. **可扩展性**：支持复杂的状态转换规则和业务逻辑
 
 **设计模式优势分析：**
 1. **单一职责**：每个状态处理器只负责特定状态的业务逻辑
 2. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
 3. **可维护性**：状态转换逻辑集中管理，便于维护和测试
 4. **可扩展性**：支持复杂的状态转换规则和业务逻辑
-
-**第三步：数据库设计**
-
-```
-**设计模式优势分析：**
-44. **单一职责**：每个状态处理器只负责特定状态的业务逻辑
-45. **开闭原则**：新增状态时只需添加新的处理器，无需修改现有代码
-46. **可维护性**：状态转换逻辑集中管理，便于维护和测试
-47. **可扩展性**：支持复杂的状态转换规则和业务逻辑
 
 **第三步：数据库设计**
 CREATE TABLE orders (
@@ -789,13 +792,15 @@ CREATE TABLE payment_records (
     INDEX idx_payment_status (payment_status),
     INDEX idx_payment_time (payment_time),
     FOREIGN KEY (order_id) REFERENCES orders(id)
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='支付记录表';
    
-50. **缓存策略**：
+1. **缓存策略**：
    - 热点订单数据缓存到Redis
+
    - 用户订单列表缓存，设置合理的过期时间
    
-51. **读写分离**：
+1. **读写分离**：
    - 订单查询使用从库
    - 订单创建和状态更新使用主库
 
@@ -803,12 +808,6 @@ CREATE TABLE payment_records (
 
 
 **RESTful API设计模板：**
-
-```yaml
-
-## 第7章 订单管理API设计规范
-
-openapi: 3.0.0
 info:
   title: 订单管理API
   version: 1.0.0
@@ -860,6 +859,7 @@ paths:
           in: query
           required: true
           schema:
+
             type: integer
 
             format: int64
@@ -867,12 +867,14 @@ paths:
 
           in: query
           schema:
+
             type: string
 
             enum: [PENDING_PAYMENT, PAID, SHIPPED, DELIVERED, COMPLETED, CANCELLED]
         - name: page
 
           in: query
+
           schema:
             type: integer
             default: 1
@@ -893,6 +895,7 @@ paths:
 
   /api/v1/orders/{orderId}:
     get:
+
       summary: 查询订单详情
       tags: [订单管理]
       parameters:
@@ -915,6 +918,7 @@ paths:
           description: 订单不存在
     
     patch:
+
       summary: 更新订单状态
       tags: [订单管理]
       parameters:
@@ -942,6 +946,7 @@ paths:
 
 components:
   schemas:
+
     CreateOrderRequest:
       type: object
       required:
@@ -1026,6 +1031,15 @@ components:
 # 第7章 设计评审报告
 
 
+# 第7章 设计评审报告
+
+
+## 7.4 基本信息
+
+- 项目名称：[项目名称]
+# 第7章 设计评审报告
+
+
 ## 7.4 基本信息
 
 - 项目名称：[项目名称]
@@ -1106,12 +1120,6 @@ components:
 **工具集成最佳实践：**
 
 56. **版本控制集成**
-
-```bash
-
-## 第7章 将设计文件纳入版本控制
-
-docs/
 ├── architecture/
 │   ├── system-architecture.drawio
 │   ├── component-diagram.puml
@@ -1166,9 +1174,11 @@ jobs:
           swagger-codegen generate -i docs/api/order-api.yaml -l html2 -o docs/api/html/
   "drawio-integration.theme": "Kennedy"
 }
-
-```
-
+通过这些工具和集成方式，团队可以建立高效的设计协作流程，确保设计质量和一致性。
+// .vscode/settings.json
+{
+  "plantuml.server": "https://www.plantuml.com/plantuml",
+  "plantuml.render": "PlantUMLServer",
 通过这些工具和集成方式，团队可以建立高效的设计协作流程，确保设计质量和一致性。
 // .vscode/settings.json
 {
