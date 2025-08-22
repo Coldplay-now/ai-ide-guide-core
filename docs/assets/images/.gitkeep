@@ -1,0 +1,19 @@
+# 图片资源目录
+
+此目录用于存放AI IDE开发指南v2.0的图片资源。
+
+## 子目录说明
+
+- `charts/` - 图表文件
+- `diagrams/` - 流程图和架构图
+- `screenshots/` - 截图文件
+- `icons/` - 图标文件
+
+## 文件命名规范
+
+格式：`章节编号-图片类型-描述.扩展名`
+
+示例：
+- `03-chart-tool-comparison.png`
+- `05-diagram-implementation-flow.svg`
+- `08-screenshot-ide-interface.jpg`

@@ -1,0 +1,30 @@
+# 章节内容目录
+
+此目录用于存放AI IDE开发指南v2.0的各章节内容。
+
+## 目录结构规划
+
+```
+chapters/
+├── 01-introduction/           # 引言
+├── 02-ai-ide-overview/       # AI IDE技术概述
+├── 03-tool-comparison/       # 工具选型与对比
+├── 04-roi-assessment/        # 投资回报率评估
+├── 05-implementation-roadmap/ # 实施路线图
+├── 06-requirements-analysis/  # 软件需求分析
+├── 07-design-management/     # 设计管理
+├── 08-development-management/ # 开发管理
+├── 09-testing-management/    # 测试管理
+├── 10-collaboration/         # 项目协作与沟通
+├── 11-risk-security/         # 风险管控与安全
+├── 12-team-training/         # 团队培训与能力建设
+├── 13-monitoring-improvement/ # 监控评估与持续改进
+├── 14-case-studies/          # 实践案例集
+└── 15-best-practices/        # 最佳实践指南
+```
+
+## 文件命名规范
+
+- 章节文件：`章节编号-章节名称.md`
+- 图片文件：`章节编号-图片类型-描述.扩展名`
+- 附件文件：`章节编号-附件类型-描述.扩展名`

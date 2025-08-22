@@ -1,0 +1,25 @@
+# Core版本不包含的内容
+scripts/
+quality-tools/
+config/
+dist/
+temp/
+logs/
+project-management/
+research/
+quality/
+examples/
+.github/
+.kiro/
+chapters-verification-reports/
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# 构建文件
+*.zip
+*.tar.gz
+build/
