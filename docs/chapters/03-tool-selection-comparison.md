@@ -1,4 +1,4 @@
-# 第3章 工具选型与对比
+# 第3章 工具选型与对比分析
 
 
 ## 3.1 工具评估维度和标准
@@ -54,7 +54,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 3.1.2 详细评估标准
 
 
-**3.1.2.1 功能维度评估标准**
+**功能维度评估标准**
 
 
 **1. 代码生成能力 (权重: 25%)**
@@ -125,7 +125,7 @@ def evaluate_code_generation(tool):
 - 安全漏洞检测能力
 - 修复建议质量
 
-**3.1.2.2 性能维度评估标准**
+**性能维度评估标准**
 
 
 **1. 响应速度 (权重: 30%)**
@@ -177,7 +177,7 @@ def benchmark_response_time(tool, test_prompts, iterations=100):
 - CodeXGLUE基准
 - 自定义业务场景测试
 
-**3.1.2.3 成本维度评估标准**
+**成本维度评估标准**
 
 
 **1. 总拥有成本(TCO)计算模型**
@@ -219,7 +219,7 @@ def calculate_tco(tool_config, team_size, project_duration_months):
 
 ```
 
-**3.1.2.4 安全维度评估标准**
+**安全维度评估标准**
 
 
 **1. 数据安全评估**
@@ -306,16 +306,18 @@ def calculate_tco(tool_config, team_size, project_duration_months):
 ### 3.2.2 详细功能对比
 
 
-**3.2.2.1 代码生成能力对比**
+**代码生成能力对比**
 
 
 **测试场景**: 实现一个用户认证系统
 
 ```python
-# 第3章 测试提示: "创建一个包含注册、登录、密码重置功能的用户认证系统"
+```
+
+# 测试提示: "创建一个包含注册、登录、密码重置功能的用户认证系统"
 
 
-# 第3章 GitHub Copilot 生成结果
+# GitHub Copilot 生成结果
 
 class UserAuth:
     def __init__(self):
@@ -334,7 +336,7 @@ class UserAuth:
         }
         return {"success": "注册成功"}
 
-# 第3章 Cursor 生成结果 (更完整的实现)
+# Cursor 生成结果 (更完整的实现)
 
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
@@ -376,7 +378,7 @@ class UserAuthSystem:
 - **GitHub Copilot**: 生成基础框架，需要手动添加安全特性
 - **Claude Code**: 注重安全性，会主动添加安全检查和最佳实践
 
-**3.2.2.2 智能补全准确率测试**
+**智能补全准确率测试**
 
 
 **测试方法**: 使用标准化代码片段，测试补全建议的准确性
@@ -404,10 +406,12 @@ def fibonacci(n):
 
 ```
 
+```
+
 ### 3.2.3 性能基准测试结果
 
 
-**3.2.3.1 响应时间对比**
+**响应时间对比**
 
 
 <div class="chart-container">
@@ -442,7 +446,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**3.2.3.2 资源消耗对比**
+**资源消耗对比**
 
 
 | 工具 | CPU使用率 | 内存占用 | 网络带宽 | 本地存储 |
@@ -505,7 +509,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 3.3.2 详细决策标准
 
 
-**3.3.2.1 按团队规模的选型建议**
+**按团队规模的选型建议**
 
 
 **小团队 (1-5人)**
@@ -583,7 +587,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 
 ```
 
-**3.3.2.2 按技术需求的选型建议**
+**按技术需求的选型建议**
 
 
 **Web开发团队**
@@ -640,7 +644,7 @@ Web开发选型:
 ### 3.3.3 选型评分工具
 
 
-**3.3.3.1 自动化评分脚本**
+**自动化评分脚本**
 
 
 ```python
@@ -772,6 +776,8 @@ class AIIDESelector:
         
         return weights
 
+```
+
 # 第3章 使用示例
 
 selector = AIIDESelector()
@@ -795,13 +801,15 @@ for i, (tool, score) in enumerate(recommendations, 1):
 
 ```
 
+```
+
 ## 3.4 工具迁移指南和注意事项
 
 
 ### 3.4.1 迁移规划框架
 
 
-**3.4.1.1 迁移阶段划分**
+**迁移阶段划分**
 
 
 <div class="chart-container">
@@ -834,7 +842,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**3.4.1.2 详细迁移计划模板**
+**详细迁移计划模板**
 
 
 ```yaml
@@ -902,7 +910,7 @@ AI IDE迁移计划模板:
 ### 3.4.2 常见迁移场景
 
 
-**3.4.2.1 从传统IDE到AI IDE**
+**从传统IDE到AI IDE**
 
 
 **迁移挑战**:
@@ -915,6 +923,8 @@ AI IDE迁移计划模板:
 **解决方案**:
 
 ```python
+```
+
 # 第3章 渐进式迁移策略
 
 class GradualMigrationPlan:
@@ -985,7 +995,7 @@ class GradualMigrationPlan:
 
 ```
 
-**3.4.2.2 从一个AI IDE到另一个AI IDE**
+**从一个AI IDE到另一个AI IDE**
 
 
 **迁移考虑因素**:
@@ -1025,10 +1035,12 @@ AI IDE间迁移检查清单:
 
 ```
 
+```
+
 ### 3.4.3 迁移风险管理
 
 
-**3.4.3.1 风险识别和评估**
+**风险识别和评估**
 
 
 | 风险类别 | 风险描述 | 影响程度 | 发生概率 | 风险等级 |
@@ -1039,7 +1051,7 @@ AI IDE间迁移检查清单:
 | 成本风险 | 培训和许可成本超预算 | 中 | 低 | 低 |
 | 质量风险 | 过渡期代码质量下降 | 高 | 中 | 高 |
 
-**3.4.3.2 风险应对策略**
+**风险应对策略**
 
 
 **技术风险应对**:
@@ -1121,7 +1133,7 @@ def handle_personnel_risks():
 ### 3.4.4 迁移成功标准
 
 
-**3.4.4.1 量化指标**
+**量化指标**
 
 
 ```yaml
@@ -1152,7 +1164,7 @@ def handle_personnel_risks():
 
 ```
 
-**3.4.4.2 评估方法**
+**评估方法**
 
 
 ```python
@@ -1227,6 +1239,8 @@ class MigrationSuccessEvaluator:
         
         return recommendations
 
+```
+
 # 第3章 使用示例
 
 evaluator = MigrationSuccessEvaluator()
@@ -1253,3 +1267,5 @@ print("改进建议:", result['recommendations'])
 ---
 
 *本章总结*: 工具选型需要综合考虑功能、性能、成本、安全等多个维度。通过系统化的评估框架和决策流程，可以选择最适合团队需求的AI IDE工具。迁移过程需要careful规划和风险管理，确保平稳过渡和成功实施。
+
+```

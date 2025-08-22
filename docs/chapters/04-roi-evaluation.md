@@ -46,7 +46,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 4.1.2 详细成本计算模型
 
 
-**4.1.2.1 直接成本计算**
+**直接成本计算**
 
 
 **1. 工具许可费用**
@@ -164,7 +164,7 @@ def calculate_training_implementation_cost(team_size, complexity_level):
     }
 ```
 
-**4.1.2.2 间接成本计算**
+**间接成本计算**
 
 
 **1. 学习曲线成本**
@@ -233,12 +233,13 @@ def calculate_management_overhead(team_size, project_duration_months):
 ### 4.1.3 成本分析实例
 
 
-**4.1.3.1 小团队成本分析 (5人团队)**
+**小团队成本分析 (5人团队)**
 
 
 ```python
-# 第4章 小团队成本分析示例
-# 第4章 小团队成本分析示例
+```
+
+# 小团队成本分析示例
 
 def small_team_cost_analysis():
     team_config = {
@@ -303,11 +304,13 @@ def small_team_cost_analysis():
         'cost_per_person_per_month': total_cost / (team_config['team_size'] * team_config['project_duration'])
     }
 
-# 第4章 执行分析
+# 执行分析
 
 small_team_analysis = small_team_cost_analysis()
 print(f"小团队总成本: ¥{small_team_analysis['total_cost']:,.0f}")
 print(f"人均月成本: ¥{small_team_analysis['cost_per_person_per_month']:,.0f}")
+```
+
 ```
 
 ## 4.2 效益量化评估框架
@@ -355,7 +358,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 4.2.2 量化效益计算方法
 
 
-**4.2.2.1 开发效率提升效益**
+**开发效率提升效益**
 
 
 **1. 编码速度提升**
@@ -422,7 +425,7 @@ def calculate_debugging_benefit(team_size, avg_salary, debugging_reduction_rate,
     }
 ```
 
-**4.2.2.2 代码质量改善效益**
+**代码质量改善效益**
 
 
 **1. 缺陷减少效益**
@@ -484,7 +487,7 @@ def calculate_maintenance_benefit(team_size, avg_salary, maintenance_reduction_r
 ### 4.2.3 效益评估实例
 
 
-**4.2.3.1 中型团队效益分析 (15人团队)**
+**中型团队效益分析 (15人团队)**
 
 
 ```python
@@ -553,11 +556,15 @@ def medium_team_benefit_analysis():
         'monthly_benefit': total_benefit / team_config['project_duration']
     }
 
-# 第4章 执行效益分析
+```
+
+# 执行效益分析
 
 medium_team_benefit = medium_team_benefit_analysis()
 print(f"中型团队总效益: ¥{medium_team_benefit['total_benefit']:,.0f}")
 print(f"月均效益: ¥{medium_team_benefit['monthly_benefit']:,.0f}")
+```
+
 ```
 
 ## 4.3 ROI计算公式和示例
@@ -566,7 +573,7 @@ print(f"月均效益: ¥{medium_team_benefit['monthly_benefit']:,.0f}")
 ### 4.3.1 ROI计算公式
 
 
-**4.3.1.1 基础ROI公式**
+**基础ROI公式**
 
 
 ```python
@@ -587,7 +594,7 @@ def calculate_basic_roi(total_benefits, total_costs):
     }
 ```
 
-**4.3.1.2 时间价值调整的ROI (NPV方法)**
+**时间价值调整的ROI (NPV方法)**
 
 
 ```python
@@ -617,7 +624,7 @@ def calculate_npv_roi(cash_flows, discount_rate, initial_investment):
     }
 ```
 
-**4.3.1.3 投资回收期计算**
+**投资回收期计算**
 
 
 ```python
@@ -761,7 +768,7 @@ class ComprehensiveROIAnalyzer:
 ### 4.3.3 ROI计算实例
 
 
-**4.3.3.1 完整ROI分析示例**
+**完整ROI分析示例**
 
 
 ```python
@@ -834,9 +841,13 @@ def complete_roi_example():
     
     return roi_analysis
 
-# 第4章 执行完整ROI分析
+```
+
+# 执行完整ROI分析
 
 roi_result = complete_roi_example()
+```
+
 ```
 
 ## 4.4 风险调整收益分析工具
@@ -845,7 +856,7 @@ roi_result = complete_roi_example()
 ### 4.4.1 风险识别和量化
 
 
-**4.4.1.1 风险分类框架**
+**风险分类框架**
 
 
 <div class="chart-container">
@@ -879,7 +890,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**4.4.1.2 风险量化模型**
+**风险量化模型**
 
 
 ```python
@@ -1057,7 +1068,9 @@ class MonteCarloROISimulation:
         
         return analysis, roi_array
 
-# 第4章 使用示例
+```
+
+# 使用示例
 
 base_params = {
     'base_annual_benefit': 200000,
@@ -1072,6 +1085,8 @@ print(f"平均ROI: {analysis['mean_roi']:.1f}%")
 print(f"ROI标准差: {analysis['std_roi']:.1f}%")
 print(f"ROI为正的概率: {analysis['probability_positive_roi']*100:.1f}%")
 print(f"ROI超过100%的概率: {analysis['probability_roi_above_threshold']['100%']*100:.1f}%")
+```
+
 ```
 
 ### 4.4.3 敏感性分析
@@ -1176,7 +1191,9 @@ class SensitivityAnalysis:
         else:
             return '低影响'
 
-# 第4章 使用示例
+```
+
+# 使用示例
 
 base_case = {
     'coding_speed_improvement': 0.35,
@@ -1200,3 +1217,5 @@ for i, (factor, impact_data) in enumerate(critical_factors, 1):
 ---
 
 *本章总结*: ROI评估是AI IDE投资决策的关键工具。通过系统化的成本分析、效益量化和风险调整，可以为投资决策提供科学依据。蒙特卡洛模拟和敏感性分析进一步增强了评估的可靠性，帮助识别关键风险因素和影响变量。
+
+```

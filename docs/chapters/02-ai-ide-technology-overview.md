@@ -261,7 +261,9 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 **技术特色**
 
 ```python
-# 第2章 Copilot的上下文感知示例
+```
+
+# Copilot的上下文感知示例
 
 def calculate_fibonacci(n):
     """计算斐波那契数列的第n项"""
@@ -340,7 +342,7 @@ async function createUser(userData: User): Promise<User> {
 **技术特色**
 
 ```python
-# 第2章 Claude Code的安全检查示例
+# Claude Code的安全检查示例
 
 def process_user_input(user_input):
     # Claude会自动识别安全风险并提供安全的实现
@@ -357,6 +359,8 @@ def process_user_input(user_input):
 - 安全要求高的企业应用
 - 教育和培训场景
 - 需要代码解释和文档生成的项目
+
+```
 
 ### 2.2.3 产品选型决策矩阵
 
@@ -429,7 +433,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 - 个性化适应: 学习个人和团队的编程风格
 - 上下文记忆: 长期对话和项目上下文维护
 
-**2.3.1.2 用户体验优化**
+**用户体验优化**
 
 
 **1. 响应速度提升**
@@ -444,7 +448,9 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 **2. 智能交互增强**
 
 ```python
-# 第2章 未来的自然语言编程示例
+```
+
+# 未来的自然语言编程示例
 
 def natural_language_programming():
     """
@@ -459,6 +465,8 @@ def natural_language_programming():
 
     """
     pass
+
+```
 
 ```
 
@@ -516,16 +524,18 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 **1. 语言转换和迁移**
 
 ```python
-# 第2章 自动语言转换示例
+```
 
-# 第2章 输入: Python代码
+# 自动语言转换示例
+
+# 输入: Python代码
 
 def fibonacci(n):
     if n <= 1:
         return n
     return fibonacci(n-1) + fibonacci(n-2)
 
-# 第2章 AI自动转换为Java
+# AI自动转换为Java
 
 """
 public class Fibonacci {
@@ -546,6 +556,8 @@ public class Fibonacci {
 - 框架迁移工具
 - 依赖管理优化
 - 兼容性检查
+
+```
 
 ### 2.3.3 长期趋势 (2027-2030)
 
@@ -573,7 +585,9 @@ public class Fibonacci {
 **1. 量子计算支持**
 
 ```python
-# 第2章 量子编程AI助手示例
+```
+
+# 量子编程AI助手示例
 
 def quantum_algorithm_generation():
     """
@@ -595,6 +609,8 @@ def quantum_algorithm_generation():
 - 生物神经网络模拟
 - 进化算法应用
 - 生物启发式优化
+
+```
 
 ## 2.4 应用场景分类框架
 

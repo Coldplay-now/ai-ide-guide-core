@@ -12,7 +12,7 @@
 ### 15.1.1 项目启动和规划
 
 
-**15.2.1.1 项目启动框架**
+**项目启动框架**
 
 
 AI IDE项目的成功启动需要遵循结构化的框架：
@@ -44,7 +44,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.2.1.2 项目章程模板**
+**项目章程模板**
 
 
 **项目基本信息**
@@ -67,7 +67,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 - 排除范围：[明确不包含的内容]
 - 边界条件：[项目边界和约束条件]
 
-**15.2.1.3 利益相关者分析**
+**利益相关者分析**
 
 
 ```python
@@ -103,7 +103,7 @@ stakeholder_analysis = {
 ### 15.1.2 项目执行管理
 
 
-**15.2.2.1 敏捷项目管理方法**
+**敏捷项目管理方法**
 
 
 采用敏捷方法管理AI IDE实施项目：
@@ -170,7 +170,7 @@ project_kpis = {
 | 预算风险 | 成本超出预算 | 中 | 中 | 中 | 分阶段投资，严格控制 |
 | 进度风险 | 项目延期 | 中 | 中 | 中 | 缓冲时间，资源调配 |
 
-**15.2.2.2 变更管理流程**
+**变更管理流程**
 
 
 <div class="chart-container">
@@ -203,7 +203,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 15.1.3 项目收尾和评估
 
 
-**15.2.3.1 项目收尾检查清单**
+**项目收尾检查清单**
 
 
 **交付物验收**
@@ -228,7 +228,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 - [ ] 项目文档已归档
 - [ ] 项目总结报告已完成
 
-**15.2.3.2 项目成功评估框架**
+**项目成功评估框架**
 
 
 **定量评估指标**
@@ -270,7 +270,7 @@ success_metrics = {
 ### 15.2.1 组织结构设计
 
 
-**15.3.1.1 AI IDE团队组织架构**
+**AI IDE团队组织架构**
 
 
 <div class="chart-container">
@@ -301,7 +301,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.3.1.2 角色职责定义**
+**角色职责定义**
 
 
 **项目经理**
@@ -335,7 +335,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 15.2.2 人员能力发展
 
 
-**15.3.2.1 技能发展路径**
+**技能发展路径**
 
 
 <div class="chart-container">
@@ -368,7 +368,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.3.2.2 能力评估体系**
+**能力评估体系**
 
 
 **技能评估矩阵**
@@ -413,7 +413,7 @@ development_plan_template = {
 ### 15.2.3 激励和绩效管理
 
 
-**15.3.3.1 激励机制设计**
+**激励机制设计**
 
 
 **多层次激励体系**
@@ -468,7 +468,7 @@ performance_indicators = {
 
 ```
 
-**15.3.3.2 职业发展通道**
+**职业发展通道**
 
 
 **技术发展路径**
@@ -495,7 +495,7 @@ performance_indicators = {
 ### 15.3.1 决策框架和模型
 
 
-**15.4.1.1 RACI责任矩阵**
+**RACI责任矩阵**
 
 
 AI IDE项目关键决策的责任分配：
@@ -511,7 +511,7 @@ AI IDE项目关键决策的责任分配：
 
 *R=负责执行, A=批准决策, C=咨询参与, I=知情了解*
 
-**15.4.1.2 决策树模型**
+**决策树模型**
 
 
 <div class="chart-container">
@@ -541,7 +541,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 15.3.2 数据驱动决策
 
 
-**15.4.2.1 决策支持仪表板**
+**决策支持仪表板**
 
 
 **实时监控指标**
@@ -573,8 +573,10 @@ dashboard_metrics = {
 **决策支持报告模板**
 
 ```markdown
-# 第15章 AI IDE效果评估报告
+**AI IDE效果评估报告**
 
+
+```
 
 ## 15.5 执行摘要
 
@@ -617,10 +619,12 @@ dashboard_metrics = {
 
 ```
 
+```
+
 ### 15.3.3 风险决策管理
 
 
-**15.8.1.1 风险评估矩阵**
+**风险评估矩阵**
 
 
 ```python
@@ -644,7 +648,7 @@ risk_assessment_matrix = {
 
 ```
 
-**15.8.1.2 风险应对策略**
+**风险应对策略**
 
 
 **高风险应对措施**
@@ -676,7 +680,7 @@ risk_assessment_matrix = {
 ### 15.4.1 变革管理框架
 
 
-**15.9.1.1 Kotter 8步变革模型应用**
+**Kotter 8步变革模型应用**
 
 
 <div class="chart-container">
@@ -706,7 +710,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.9.1.2 变革阻力分析和应对**
+**变革阻力分析和应对**
 
 
 **阻力来源分析**
@@ -762,7 +766,7 @@ resistance_analysis = {
 ### 15.4.2 文化建设指导
 
 
-**15.9.2.1 AI驱动的技术文化**
+**AI驱动的技术文化**
 
 
 **文化价值观**
@@ -803,7 +807,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.9.2.2 学习型组织建设**
+**学习型组织建设**
 
 
 **知识管理体系**
@@ -841,7 +845,7 @@ knowledge_management = {
 ### 15.4.3 沟通和培训策略
 
 
-**15.9.3.1 多层次沟通策略**
+**多层次沟通策略**
 
 
 **沟通对象分层**
@@ -883,7 +887,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 | 技术团队 | 技术培训、实践指导、经验分享 | 技术会议、培训课程 | 周度 |
 | 全体员工 | 项目进展、成功案例、政策变化 | 全员邮件、内部网站 | 月度 |
 
-**15.9.3.2 培训体系设计**
+**培训体系设计**
 
 
 **分层培训计划**
@@ -964,7 +968,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 15.5.1 评估指标体系
 
 
-**15.10.1.1 平衡计分卡方法**
+**平衡计分卡方法**
 
 
 ```python
@@ -997,7 +1001,7 @@ balanced_scorecard = {
 
 ```
 
-**15.10.1.2 关键绩效指标(KPI)**
+**关键绩效指标(KPI)**
 
 
 **效率类指标**
@@ -1024,7 +1028,7 @@ balanced_scorecard = {
 ### 15.5.2 数据收集和分析
 
 
-**15.10.2.1 数据收集方法**
+**数据收集方法**
 
 
 **自动化数据收集**
@@ -1101,7 +1105,7 @@ manual_data_collection = {
 
 ```
 
-**15.10.2.2 数据分析框架**
+**数据分析框架**
 
 
 **趋势分析**
@@ -1171,7 +1175,7 @@ def comparative_analysis(before_data, after_data, metrics):
 ### 15.5.3 持续改进机制
 
 
-**15.10.3.1 改进循环流程**
+**改进循环流程**
 
 
 <div class="chart-container">
@@ -1198,7 +1202,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**15.10.3.2 改进建议生成**
+**改进建议生成**
 
 
 **问题分类和改进建议**
@@ -1255,7 +1259,7 @@ improvement_suggestions = {
 
 ```
 
-**15.10.3.3 最佳实践更新**
+**最佳实践更新**
 
 
 **实践库维护**

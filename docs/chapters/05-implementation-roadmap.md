@@ -46,7 +46,7 @@ gantt
 ### 5.1.2 各阶段详细规划
 
 
-**5.1.2.1 第一阶段：准备阶段 (4周)**
+**第一阶段：准备阶段 (4周)**
 
 
 **目标**: 完成前期调研、工具选型和环境准备
@@ -86,7 +86,7 @@ gantt
 - 环境配置文档
 - 培训计划
 
-**5.1.2.2 第二阶段：试点阶段 (4周)**
+**第二阶段：试点阶段 (4周)**
 
 
 **目标**: 小范围验证可行性，识别问题和风险
@@ -147,7 +147,7 @@ def select_pilot_team(candidates):
 
 ```
 
-**5.1.2.3 第三阶段：推广阶段 (8周)**
+**第三阶段：推广阶段 (8周)**
 
 
 **目标**: 全团队推广使用，建立标准化流程
@@ -206,7 +206,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**5.1.2.4 第四阶段：优化阶段 (5周)**
+**第四阶段：优化阶段 (5周)**
 
 
 **目标**: 基于使用反馈优化配置和流程
@@ -236,7 +236,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 
 ```
 
-**5.1.2.5 第五阶段：稳定运行 (6周+)**
+**第五阶段：稳定运行 (6周+)**
 
 
 **目标**: 建立长期运维和持续改进机制
@@ -306,7 +306,7 @@ timeline
 ### 5.2.2 里程碑检查标准
 
 
-**5.2.2.1 准备阶段里程碑**
+**准备阶段里程碑**
 
 
 **里程碑1: 需求分析完成**
@@ -377,7 +377,7 @@ def check_tool_selection_milestone():
 
 ```
 
-**5.2.2.2 试点阶段里程碑**
+**试点阶段里程碑**
 
 
 **里程碑3: 试点效果验证**
@@ -414,7 +414,7 @@ def check_pilot_success_milestone():
 
 ```
 
-**5.2.2.3 推广阶段里程碑**
+**推广阶段里程碑**
 
 
 **里程碑4: 全面部署完成**
@@ -566,7 +566,7 @@ class MilestoneTracker:
 ### 5.3.1 人力资源配置
 
 
-**5.3.1.1 项目团队结构**
+**项目团队结构**
 
 
 <div class="chart-container">
@@ -597,7 +597,7 @@ classDef process fill:#90caf9,stroke:#333,stroke-width:2px
 classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ```
 
-**5.3.1.2 人力资源需求计算**
+**人力资源需求计算**
 
 
 ```python
@@ -670,7 +670,7 @@ def get_role_cost(role):
 ### 5.3.2 技术资源配置
 
 
-**5.3.2.1 基础设施需求**
+**基础设施需求**
 
 
 ```python
@@ -737,7 +737,7 @@ def calculate_infrastructure_requirements(team_size, deployment_type, duration_m
 
 ```
 
-**5.3.2.2 软件许可需求**
+**软件许可需求**
 
 
 ```python
@@ -787,7 +787,7 @@ def calculate_software_licenses(team_size, tool_selection, duration_months):
 ### 5.3.3 预算模板
 
 
-**5.3.3.1 综合预算计算器**
+**综合预算计算器**
 
 
 ```python
@@ -952,7 +952,9 @@ class AIIDEBudgetCalculator:
         
         return cash_flow
 
-# 第5章 使用示例
+```
+
+# 使用示例
 
 project_config = {
     'team_size': 15,
@@ -973,13 +975,15 @@ print(f"人均成本: ¥{budget_report['budget_summary']['cost_per_person']:,.0f
 
 ```
 
+```
+
 ## 5.4 风险应对策略和应急预案
 
 
 ### 5.4.1 风险识别和分类
 
 
-**5.4.1.1 风险登记册**
+**风险登记册**
 
 
 ```python
@@ -1082,7 +1086,7 @@ class RiskRegister:
 ### 5.4.2 风险应对策略
 
 
-**5.4.2.1 技术风险应对**
+**技术风险应对**
 
 
 ```python
@@ -1149,7 +1153,7 @@ def create_technical_risk_mitigation_plan():
 
 ```
 
-**5.4.2.2 组织风险应对**
+**组织风险应对**
 
 
 ```python
@@ -1219,7 +1223,7 @@ def create_organizational_risk_mitigation_plan():
 ### 5.4.3 应急预案
 
 
-**5.4.3.1 关键场景应急预案**
+**关键场景应急预案**
 
 
 ```python
@@ -1368,7 +1372,7 @@ class EmergencyResponsePlan:
 
 ```
 
-**5.4.3.2 业务连续性保障**
+**业务连续性保障**
 
 
 ```python
