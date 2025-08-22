@@ -9,11 +9,10 @@
 - **质量评分**: 86/100
 - **文档优化**: 已完成所有772个质量问题修复
 - **标题结构**: 优化为3级标题结构
-- **渲染效果**: 100/100分
 
-## 📚 内容结构
+## 📦 包含内容
 
-### 核心章节 (docs/chapters/)
+### 📚 核心章节 (16个)
 - 01-guide-overview.md - 指南概览
 - 02-ai-ide-technology-overview.md - AI IDE技术概览
 - 03-tool-selection-comparison.md - 工具选择与对比
@@ -31,57 +30,58 @@
 - 15-management-best-practices.md - 管理最佳实践
 - 16-operational-best-practices.md - 运营最佳实践
 
-### 资源文件 (docs/assets/)
-- **diagrams/** - 系统架构图、流程图、界面线框图
-- **tables/** - 工具对比表、技术栈对比、实施计划对比
-- **standards/** - 图表标准规范
-
-### 附录内容 (docs/appendix/)
+### 📋 实用附录 (7个)
 - a-tool-configuration-templates.md - 工具配置模板
 - b-prompt-library.md - 提示词库
 - c-evaluation-tables-tools.md - 评估表格工具
 - d-spec-driven-development.md - 规范驱动开发
 
-### 文档模板 (docs/templates/)
+### 📝 文档模板 (3个)
 - chapter-template.md - 章节模板
 - case-study-template.md - 案例研究模板
 - style-guide.md - 样式指南
 
-## 🚀 使用方法
+### 📊 资源文件
+- 图表和流程图
+- 对比表格
+- 标准规范
 
-### 快速开始
-1. 从 `docs/chapters/01-guide-overview.md` 开始阅读
-2. 按章节顺序学习完整内容
-3. 参考附录获取工具配置和提示词库
-4. 使用模板创建自己的文档
+## 🚀 快速开始
 
-### 学习路径
-- **初学者**: 01 → 02 → 03 → 04 → 05
-- **实施者**: 06 → 07 → 08 → 09 → 10
-- **管理者**: 11 → 12 → 13 → 15 → 16
-- **案例学习**: 14 → 14-3
+1. **阅读指南**: 从 `docs/chapters/01-guide-overview.md` 开始
+2. **选择路径**: 根据角色选择适合的学习路径
+3. **实践应用**: 参考附录中的模板和工具
+4. **案例学习**: 查看实践案例获取经验
 
-### 实用资源
-- **配置模板**: docs/appendix/a-tool-configuration-templates.md
-- **提示词库**: docs/appendix/b-prompt-library.md
-- **评估工具**: docs/appendix/c-evaluation-tables-tools.md
+## 📖 推荐阅读路径
 
-## 📊 质量保证
+### 🎯 决策者路径
+- 第1章：指南概览
+- 第4章：ROI评估
+- 第5章：实施路线图
+- 第11章：风险管控
+- 第14章：实践案例
 
-本版本经过全面质量优化：
-- ✅ 修复了所有772个原始质量问题
-- ✅ 代码块、表格、图表渲染效果100分
-- ✅ 统一了文档格式和结构标准
-- ✅ 优化了标题层次结构
-- ✅ 完善了交叉引用和链接
+### 👨‍💼 管理者路径
+- 第1-5章：基础理论
+- 第11-13章：管理实践
+- 第15-16章：最佳实践
 
-## 📞 支持与反馈
+### 👨‍💻 开发者路径
+- 第6-10章：技术实践
+- 附录A-B：工具和模板
+- 第14章：案例学习
 
-- **问题反馈**: 通过GitHub Issues提交
-- **贡献指南**: 参考CONTRIBUTING.md
-- **行为准则**: 参考CODE_OF_CONDUCT.md
+## 🔗 相关链接
+
+- **完整版本仓库**: https://github.com/ai-ide-guide/ai-ide-guide-v2
+- **在线文档**: https://ai-ide-guide.example.com
+- **问题反馈**: https://github.com/Coldplay-now/ai-ide-guide-core/issues
+
+## 📄 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ---
 
-**Core版本说明**: 此版本仅包含用户阅读所需的核心文档，不包含开发工具、脚本、测试等技术实现部分。如需完整版本，请下载完整发布包。
-
+**🎉 AI IDE开发指南 v3.1.0 Core版本 - 专为最终用户优化的轻量级版本！**

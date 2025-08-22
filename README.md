@@ -4,12 +4,17 @@
 
 [![GitHub Stars](https://img.shields.io/github/stars/ai-ide-guide/ai-ide-guide-v2?style=social)](https://github.com/ai-ide-guide/ai-ide-guide-v2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<<<<<<< HEAD
 [![Version](https://img.shields.io/badge/version-v3.1.0-blue.svg)](https://github.com/ai-ide-guide/ai-ide-guide-v2/releases)
+=======
+[![Version](https://img.shields.io/badge/version-v3.0.0-blue.svg)](https://github.com/ai-ide-guide/ai-ide-guide-v2/releases)
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg)](https://ai-ide-guide.example.com)
 [![Quality](https://img.shields.io/badge/quality-86%2F100-green.svg)](docs-optimization-v3-final-summary-report.md)
 
 ## 📖 关于本指南
 
+<<<<<<< HEAD
 **AI IDE开发指南v3.1.0**是一部系统性、实用性的技术指南，专注于人工智能集成开发环境在软件开发全生命周期中的应用。本指南不仅是一本技术手册，更是一套完整的方法论体系，帮助个人开发者、技术团队和企业组织成功实现AI驱动的开发模式转型。
 
 ### ✨ v3.1 新特性
@@ -20,6 +25,16 @@
 - **🎨 渲染效果提升**：代码块、表格、图表渲染效果达到100分
 - **🛠️ 自动化质量保证**：建立了完整的质量检查和修复体系
 - **⚡ 兼容性改进**：优化版本管理和发布流程
+=======
+**AI IDE开发指南v3.0**是一部系统性、实用性的技术指南，专注于人工智能集成开发环境在软件开发全生命周期中的应用。本指南不仅是一本技术手册，更是一套完整的方法论体系，帮助个人开发者、技术团队和企业组织成功实现AI驱动的开发模式转型。
+
+### ✨ v3.0 新特性
+
+- **🔧 全面质量优化**：修复了所有772个原始质量问题，质量评分达到86/100
+- **📐 标题结构优化**：统一标题层次结构，最多支持3级标题
+- **🎨 渲染效果提升**：代码块、表格、图表渲染效果达到100分
+- **🛠️ 自动化质量保证**：建立了完整的质量检查和修复体系
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 ### 🎯 核心价值  {#-1}
 
@@ -56,12 +71,21 @@ AI IDE技术正在经历前所未有的发展：
 
 ### 👥 主要读者群体  {#-1}
 
+<<<<<<< HEAD
 | 角色类型       | 关注重点           | 推荐章节              | 预期收益             |
 | -------------- | ------------------ | --------------------- | -------------------- |
 | **技术决策者** | 技术战略、投资决策 | 1-5章, 11章, 14章     | 制定AI IDE技术路线图 |
 | **项目管理者** | 实施规划、团队协作 | 5章, 12-13章, 15-16章 | 优化项目管理流程     |
 | **开发实践者** | 工具使用、技能提升 | 6-10章, 附录A-B       | 掌握AI IDE核心技能   |
 | **企业决策者** | 商业价值、成本效益 | 1章, 4章, 11章, 14章  | 评估AI IDE投资价值   |
+=======
+| 角色类型 | 关注重点 | 推荐章节 | 预期收益 |
+|----------|----------|----------|----------|
+| **技术决策者** | 技术战略、投资决策 | 1-5章, 11章, 14章 | 制定AI IDE技术路线图 |
+| **项目管理者** | 实施规划、团队协作 | 5章, 12-13章, 15-16章 | 优化项目管理流程 |
+| **开发实践者** | 工具使用、技能提升 | 6-10章, 附录A-B | 掌握AI IDE核心技能 |
+| **企业决策者** | 商业价值、成本效益 | 1章, 4章, 11章, 14章 | 评估AI IDE投资价值 |
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 ### 🏢 适用场景  {#-1}
 
@@ -83,7 +107,11 @@ AI IDE技术正在经历前所未有的发展：
 
 ```mermaid
 graph LR
+<<<<<<< HEAD
     A[AI IDE开发指南v3.1.0] --> B[理论基础篇]
+=======
+    A[AI IDE开发指南v2.0] --> B[理论基础篇]
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
     A --> C[实践应用篇]
     A --> D[案例与优化篇]
     B --> B1[技术概述]
@@ -150,6 +178,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 
 本指南提供7个专业工具，确保文档质量和实施效果：
 
+<<<<<<< HEAD
 | 工具名称                           | 功能描述       | 使用场景               |
 | ---------------------------------- | -------------- | ---------------------- |
 | **format-standardization.py**      | 文档格式标准化 | 统一文档样式和结构     |
@@ -159,6 +188,17 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 | **device-compatibility-tester.py** | 设备兼容性测试 | 测试多设备显示效果     |
 | **publication-preparer.py**        | 发布准备工具   | 生成多格式发布版本     |
 | **distribution-setup.py**          | 分发设置工具   | 配置发布和分发渠道     |
+=======
+| 工具名称 | 功能描述 | 使用场景 |
+|----------|----------|----------|
+| **format-standardization.py** | 文档格式标准化 | 统一文档样式和结构 |
+| **style-validator.py** | 样式和质量验证 | 检查文档规范性 |
+| **cross-reference-validator.py** | 交叉引用验证 | 确保链接和引用准确性 |
+| **chart-quality-validator.py** | 图表质量检查 | 验证图表可读性和标准性 |
+| **device-compatibility-tester.py** | 设备兼容性测试 | 测试多设备显示效果 |
+| **publication-preparer.py** | 发布准备工具 | 生成多格式发布版本 |
+| **distribution-setup.py** | 分发设置工具 | 配置发布和分发渠道 |
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 ### 📊 质量保证体系  {#-1}
 
@@ -169,6 +209,7 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 
 ## 🚀 快速开始  {#-1}
 
+<<<<<<< HEAD
 ### � 核心版本仓库{  {#-1}
 
 **🎯 推荐使用核心版本**：本指南的核心内容（仅包含文档，不含开发工具）已发布到独立仓库：
@@ -183,18 +224,31 @@ classDef decision fill:#64b5f6,stroke:#333,stroke-width:2px
 ### 📖 在线阅读  {#-1}
 
 - **核心版本在线**: [https://github.com/Coldplay-now/ai-ide-guide-core](https://github.com/Coldplay-now/ai-ide-guide-core)
+=======
+### 📖 在线阅读  {#-1}
+
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 - **完整在线版本**: [https://ai-ide-guide.example.com](https://ai-ide-guide.example.com)
 - **移动端优化版**: [https://m.ai-ide-guide.example.com](https://m.ai-ide-guide.example.com)
 - **GitHub Pages**: [https://ai-ide-guide.github.io/ai-ide-guide-v2](https://ai-ide-guide.github.io/ai-ide-guide-v2)
 
 ### 📥 下载版本  {#-1}
 
+<<<<<<< HEAD
 | 格式               | 大小  | 适用场景           | 下载链接                                                                                                                                                                     |
 | ------------------ | ----- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **PDF完整版**      | ~15MB | 打印、离线阅读     | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载PDF](downloads/ai-ide-guide-v3.1.0.pdf) - File not found --> - File not found --> - File not found -->            |
 | **EPUB电子书**     | ~8MB  | 电子书阅读器       | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载EPUB](downloads/ai-ide-guide-v3.1.0.epub) - File not found --> - File not found --> - File not found -->          |
 | **Markdown源文件** | ~5MB  | 开发者、自定义构建 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载源码](downloads/ai-ide-guide-v3.1.0-markdown.zip) - File not found --> - File not found --> - File not found -->  |
 | **配置模板包**     | ~2MB  | 快速配置、参考实现 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载模板](downloads/ai-ide-guide-v3.1.0-templates.zip) - File not found --> - File not found --> - File not found --> |
+=======
+| 格式 | 大小 | 适用场景 | 下载链接 |
+|------|------|----------|----------|
+| **PDF完整版** | ~15MB | 打印、离线阅读 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载PDF](downloads/ai-ide-guide-v2.0.0.pdf) - File not found --> - File not found --> - File not found --> |
+| **EPUB电子书** | ~8MB | 电子书阅读器 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载EPUB](downloads/ai-ide-guide-v2.0.0.epub) - File not found --> - File not found --> - File not found --> |
+| **Markdown源文件** | ~5MB | 开发者、自定义构建 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载源码](downloads/ai-ide-guide-v2.0.0-markdown.zip) - File not found --> - File not found --> - File not found --> |
+| **配置模板包** | ~2MB | 快速配置、参考实现 | <!-- BROKEN LINK: <!-- BROKEN LINK: <!-- BROKEN LINK: [下载模板](downloads/ai-ide-guide-v2.0.0-templates.zip) - File not found --> - File not found --> - File not found --> |
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 ### 💻 本地部署  {#-1}
 
@@ -211,7 +265,11 @@ python scripts/format-standardization.py
 python scripts/style-validator.py
 
 # 生成发布版本  {#-1}
+<<<<<<< HEAD
 python scripts/publication-preparer.py --version 3.1.0
+=======
+python scripts/publication-preparer.py --version 2.0.0
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 # 启动本地服务  {#-1}
 python -m http.server 8000
@@ -248,6 +306,7 @@ python -m http.server 8000
 
 ### 📈 内容规模  {#-1}
 
+<<<<<<< HEAD
 | 指标           | 数量                 | 说明                      |
 | -------------- | -------------------- | ------------------------- |
 | **总页数**     | 500+                 | 完整PDF版本页数           |
@@ -258,6 +317,18 @@ python -m http.server 8000
 | **配置模板**   | 50+                  | 开箱即用的配置文件        |
 | **提示词库**   | 300+                 | 精选AI交互提示词          |
 | **自动化工具** | 7个                  | 专业质量保证工具          |
+=======
+| 指标 | 数量 | 说明 |
+|------|------|------|
+| **总页数** | 500+ | 完整PDF版本页数 |
+| **章节数** | 16个主章节 + 3个附录 | 系统化内容结构 |
+| **图表数** | 300+ | Mermaid图表、表格、流程图 |
+| **代码示例** | 200+ | 实用配置和代码片段 |
+| **实践案例** | 15个 | 真实项目经验总结 |
+| **配置模板** | 50+ | 开箱即用的配置文件 |
+| **提示词库** | 300+ | 精选AI交互提示词 |
+| **自动化工具** | 7个 | 专业质量保证工具 |
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 ### 🔧 技术特性  {#-1}
 
@@ -276,6 +347,7 @@ python -m http.server 8000
 
 我们欢迎各种形式的贡献：
 
+<<<<<<< HEAD
 **�  核心版本贡献** (推荐用于内容改进)：
 - � **报能告问题** - [Core版本Issue](https://github.com/Coldplay-now/ai-ide-guide-core/issues)
 - 📝 **内容改进** - [Core版本PR](https://github.com/Coldplay-now/ai-ide-guide-core/pulls)
@@ -287,6 +359,11 @@ python -m http.server 8000
 - 🔬 **技术讨论** - [完整版本讨论](https://github.com/ai-ide-guide/ai-ide-guide-v2/discussions)
 
 **🌍 通用贡献**：
+=======
+- 🐛 **报告问题** - [提交Issue](https://github.com/ai-ide-guide/ai-ide-guide-v2/issues)
+- 💡 **功能建议** - [参与讨论](https://github.com/ai-ide-guide/ai-ide-guide-v2/discussions)
+- 📝 **内容改进** - [提交PR](https://github.com/ai-ide-guide/ai-ide-guide-v2/pulls)
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 - 🌍 **翻译协助** - 帮助翻译成其他语言
 - 📖 **案例分享** - 分享您的实践经验
 
@@ -311,8 +388,12 @@ python -m http.server 8000
 ### 🌐 官方渠道  {#-1}
 
 - **官方网站**: [https://ai-ide-guide.example.com](https://ai-ide-guide.example.com)
+<<<<<<< HEAD
 - **核心版本仓库**: [https://github.com/Coldplay-now/ai-ide-guide-core](https://github.com/Coldplay-now/ai-ide-guide-core) (推荐)
 - **完整版本仓库**: [https://github.com/ai-ide-guide/ai-ide-guide-v2](https://github.com/ai-ide-guide/ai-ide-guide-v2)
+=======
+- **GitHub仓库**: [https://github.com/ai-ide-guide/ai-ide-guide-v2](https://github.com/ai-ide-guide/ai-ide-guide-v2)
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 - **API接口**: [https://api.ai-ide-guide.example.com/v1](https://api.ai-ide-guide.example.com/v1)
 
 ### 📧 联系方式  {#-1}
@@ -368,10 +449,17 @@ python -m http.server 8000
 
 **🚀 让AI IDE成为您开发路上的最佳伙伴！**
 
+<<<<<<< HEAD
 [![GitHub Core](https://img.shields.io/badge/GitHub-ai--ide--guide--core-blue?style=for-the-badge&logo=github)](https://github.com/Coldplay-now/ai-ide-guide-core)
 [![GitHub Full](https://img.shields.io/badge/GitHub-ai--ide--guide--v2-lightblue?style=for-the-badge&logo=github)](https://github.com/ai-ide-guide/ai-ide-guide-v2)
 [![Website](https://img.shields.io/badge/Website-ai--ide--guide.example.com-green?style=for-the-badge&logo=safari)](https://ai-ide-guide.example.com)
 
 **© 2024-2025 AI IDE开发指南项目组 | 版本 v3.1.0 | MIT License**
+=======
+[![GitHub](https://img.shields.io/badge/GitHub-ai--ide--guide--v2-blue?style=for-the-badge&logo=github)](https://github.com/ai-ide-guide/ai-ide-guide-v2)
+[![Website](https://img.shields.io/badge/Website-ai--ide--guide.example.com-green?style=for-the-badge&logo=safari)](https://ai-ide-guide.example.com)
+
+**© 2024-2025 AI IDE开发指南项目组 | 版本 v2.0.0 | MIT License**
+>>>>>>> aaa3a7ab878d481b5389d38199071157ab5d877e
 
 </div>
