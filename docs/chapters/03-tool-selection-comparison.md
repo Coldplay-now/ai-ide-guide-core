@@ -13,7 +13,7 @@
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE工具评估] --> B[功能维度]
     A --> C[性能维度]
     A --> D[成本维度]
