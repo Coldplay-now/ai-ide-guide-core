@@ -2549,7 +2549,7 @@ improvement_results = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[企业级监控] --> B[部门级监控]
     B --> C[团队级监控]
     C --> D[个人级监控]

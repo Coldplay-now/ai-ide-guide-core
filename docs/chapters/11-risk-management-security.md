@@ -1014,8 +1014,7 @@ preserve_evidence() {
 <div class="chart-container">
 
 ```mermaid
-graph TB
-graph TB
+graph LR
     A[数据收集层] --> B[数据处理层]
     B --> C[分析引擎]
     C --> D[告警系统]

@@ -158,7 +158,7 @@ def select_pilot_team(candidates):
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[试点团队] --> B[第一批推广]
     B --> C[第二批推广]
     C --> D[第三批推广]
@@ -175,8 +175,10 @@ graph TB
     L --> C
     L --> D
     L --> E
-```**推广阶段
-执行计划**:
+```
+
+**推广阶段执行计划**:
+
 ```yaml
 推广阶段详细计划:
   第1-2周 - 全员培训:
@@ -570,7 +572,7 @@ class MilestoneTracker:
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[项目指导委员会] --> B[项目经理]
     B --> C[技术团队]
     B --> D[培训团队]

@@ -617,7 +617,7 @@ efficiency_metrics = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[数据收集] --> B[指标计算]
     B --> C[趋势分析]
     C --> D[问题识别]
@@ -880,7 +880,7 @@ def build_learning_system():
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[实践经历] --> B[经验识别]
     B --> C[模式提取]
     C --> D[最佳实践]

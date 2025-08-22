@@ -21,7 +21,7 @@ AI IDE项目的成功启动需要遵循结构化的框架：
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[项目发起] --> B[需求分析]
     B --> C[可行性研究]
     C --> D[项目立项]
@@ -176,7 +176,7 @@ project_kpis = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[变更请求] --> B[变更评估]
     B --> C{影响分析}
     C -->|低影响| D[项目经理审批]
@@ -276,7 +276,7 @@ success_metrics = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE项目指导委员会] --> B[项目经理]
     B --> C[技术团队]
     B --> D[培训团队]
@@ -422,7 +422,7 @@ development_plan_template = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[激励体系] --> B[物质激励]
     A --> C[精神激励]
     A --> D[发展激励]
@@ -517,7 +517,7 @@ AI IDE项目关键决策的责任分配：
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE实施决策] --> B{团队规模}
     B -->|<20人| C[轻量级方案]
     B -->|20-100人| D[标准方案]
@@ -682,7 +682,7 @@ risk_assessment_matrix = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[1. 营造紧迫感] --> B[2. 建立指导联盟]
     B --> C[3. 制定变革愿景]
     C --> D[4. 传播变革愿景]
@@ -850,7 +850,7 @@ knowledge_management = {
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[沟通策略] --> B[高级管理层]
     A --> C[中层管理者]
     A --> D[技术团队]
@@ -1177,7 +1177,7 @@ def comparative_analysis(before_data, after_data, metrics):
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[数据收集] --> B[分析评估]
     B --> C[问题识别]
     C --> D[原因分析]

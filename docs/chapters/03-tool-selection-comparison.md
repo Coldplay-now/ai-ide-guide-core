@@ -13,7 +13,7 @@
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE工具评估] --> B[功能维度]
     A --> C[性能维度]
     A --> D[成本维度]
@@ -413,7 +413,7 @@ def fibonacci(n):
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[响应时间对比] --> B[代码补全]
     A --> C[代码生成]
     A --> D[错误检测]

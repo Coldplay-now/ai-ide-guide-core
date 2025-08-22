@@ -114,7 +114,7 @@ GlobalFinance是一家拥有50年历史的大型金融集团，资产规模超�
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE工具组合] --> B[主力工具]
     A --> C[专用工具]
     A --> D[自研工具]
@@ -233,7 +233,7 @@ gantt
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[开发者客户端] --> B[企业网关]
     B --> C[负载均衡器]
     C --> D[AI服务集群]
@@ -1060,8 +1060,7 @@ xychart-beta
 <div class="chart-container">
 
 ```mermaid
-graph TB
-graph TB
+graph LR
     A[AI IDE培训体系] --> B[基础课程]
     A --> C[进阶课程]
     A --> D[专业课程]

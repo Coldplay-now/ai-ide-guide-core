@@ -13,7 +13,7 @@ AI IDE投资的成本分析需要考虑直接成本和间接成本，以及一�
 <div class="chart-container">
 
 ```mermaid
-graph TB
+graph LR
     A[AI IDE总成本] --> B[直接成本]
     A --> C[间接成本]
     B --> B1[工具许可费用]
@@ -322,8 +322,7 @@ AI IDE带来的效益可以分为直接效益和间接效益，量化效益和�
 <div class="chart-container">
 
 ```mermaid
-graph TB
-graph TB
+graph LR
     A[AI IDE效益] --> B[直接效益]
     A --> C[间接效益]
     B --> B1[开发效率提升]
@@ -852,8 +851,7 @@ roi_result = complete_roi_example()
 <div class="chart-container">
 
 ```mermaid
-graph TB
-graph TB
+graph LR
     A[AI IDE投资风险] --> B[技术风险]
     A --> C[市场风险]
     A --> D[组织风险]
